@@ -1,0 +1,50 @@
+$maxWidth: 1920; // максимальная ширина страницы
+$minWidth: 320; // минимальная ширина телефона
+$maxWidthContainer: 1300; // ширина контейнера с учетом padding слева и справа
+$containerWidth: 1260; // ширина контейнера из макета
+
+$mainOffset: 15; // отступы безопасности для контейнера
+$mainFont: 'Museo Sans Cyrl'; // !указать здесь основное семейство шрифта
+$mainWeight: 400; // !указать здесь основное начертание шрифта
+
+$headerHeight: 100;
+$footerHeight: 100;
+
+$mainRadius: 15px;
+
+$blackColor: #252525;
+$whiteColor: #fff;
+$grayLightColor: #F3F6FF;
+$grayColor: #666666;
+$blueColor: #005DFF;
+$grayTableColor: #4f4f4f;
+
+$redColor: #ff4040;
+$pinkColor: #FD3C76;
+$yellowColor: #FCFF63;
+
+$firstAccentColor: $blackColor;
+$secondAccentColor: $redColor;
+
+$fontFamily: $mainFont, sans-serif; // Семейство шрифта по умолчанию
+$fontColor: $blackColor; // Цвет шрифта по умолчанию
+$fontSize: 16px; // Размер шрифта по умолчанию
+$fontWeight: $mainWeight; // Жирность шрифта по умолчанию
+
+$standartTrans: all 280ms ease-in-out 0ms;
+
+$borderLneGray: 2px solid #F2F2F2;
+
+$blockBoxShadowGray: 0px 2px 6px 2px rgba(60, 64, 67, 0.20);
+$btnBoxShadow:  0px 2px 3px rgba(#000, 10%), 
+                0px 8px 3px rgba(#000, 10%);
+
+$lightBoxShadow:  0 0 2px 0 rgba(#000, 10%), 
+                  0 0 4px 0 rgba(#000, 10%), 
+                  0 0 8px 0 rgba(#000, 10%);
+
+$hoverBoxShadow:  0 0 5px 0 rgba(#000, 10%), 
+                  0 0 10px 0 rgba(#000, 10%), 
+                  0 0 15px 0 rgba(#000, 10%);
+
+$blockBoxShadow: 0px 5px 25px rgba(0, 93, 255, 0.15);
