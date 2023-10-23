@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.blueColor {
+    color: $blueColor;
+}
+
 .title {
     font-weight: 700;
     font-size: 35px;
@@ -182,6 +186,16 @@
 .icon-play {
     width: 40px;
     height: 40px;
+}
+
+.icon-briefcase {
+    width: 30px;
+    height: 25px;
+}
+
+.icon-medal {
+    width: 30px;
+    height: 35px;
 }
 
 .arrow-right-icon {
