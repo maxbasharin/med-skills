@@ -102,6 +102,22 @@ $('.logistics__slider').on(
   }
 );
 
+$('.specialist__achievements-slider--documents').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:
+    '<img class="specialist__achievements-slider__left" src="images/arrow-left-black.svg" alt="">',
+  nextArrow:
+    '<img class="specialist__achievements-slider__right" src="images/arrow-right-black.svg" alt="">',
+});
+
+$('.specialist__achievements-slider--documents').on(
+  'afterChange',
+  function (event, slick, currentSlide) {
+    $('#pagination--documents').text(currentSlide + 1);
+  }
+);
 $('.diplom__slider').slick({
   infinite: true,
   slidesToShow: 6,
@@ -337,6 +353,23 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+$(function () {
+  $('.info__accordion .info__accordion-item:nth-child(1) .info__accordion-header');
+  // $('.info__accordion .info__accordion-item:nth-child(1) .info__accordion-content').slideDown(); //добавляет класс active первому элементу
+  $('.info__accordion-header').on('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).siblings('.info__accordion-content').slideUp();
+      $(this).removeClass('active');
+    }
+    else {
+      // $('.info__accordion-content').slideUp();
+      // $('.info__accordion-header').removeClass('active');
+      $(this).siblings('.info__accordion-content').slideToggle();
+      $(this).toggleClass('active');
+    }
+  });
+});
 
 document.querySelector('select').onchange = function() {window.location = this.value}
 
