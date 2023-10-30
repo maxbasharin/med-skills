@@ -5,6 +5,21 @@
     margin: 0 auto;
 }
 
+.hide {
+    display: none;
+}
+
+.fancybox-button svg * {
+    color: #fff;
+}
+
+.fancybox-infobar {
+    color: #fff;
+    span {
+        color: #fff;
+    }
+}
+
 .blueColor {
     color: $blueColor;
 }
@@ -92,6 +107,18 @@
     &--requirements {
         cursor: pointer;
         text-decoration: underline;
+    }
+    &--blue {
+        background-color: $blueColor;
+        border-radius: 32px;
+        border: 1px solid $blueColor;
+        font-size: 18px;
+    }
+    &--pink {
+        background-color: $pinkColor;
+        border-radius: 32px;
+        border: 1px solid $pinkColor;
+        font-size: 18px;
     }
 }
 

@@ -118,6 +118,56 @@ $('.specialist__achievements-slider--documents').on(
     $('#pagination--documents').text(currentSlide + 1);
   }
 );
+$('.specialist__achievements-slider--certificate').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:
+    '<img class="specialist__achievements-slider__left" src="images/arrow-left-black.svg" alt="">',
+  nextArrow:
+    '<img class="specialist__achievements-slider__right" src="images/arrow-right-black.svg" alt="">',
+});
+
+$('.specialist__achievements-slider--certificate').on(
+  'afterChange',
+  function (event, slick, currentSlide) {
+    $('#pagination--certificate').text(currentSlide + 1);
+  }
+);
+$('.specialist__achievements-slider--certificates').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:
+    '<img class="specialist__achievements-slider__left" src="images/arrow-left-black.svg" alt="">',
+  nextArrow:
+    '<img class="specialist__achievements-slider__right" src="images/arrow-right-black.svg" alt="">',
+});
+
+$('.specialist__achievements-slider--certificates').on(
+  'afterChange',
+  function (event, slick, currentSlide) {
+    $('#pagination--certificates').text(currentSlide + 1);
+  }
+);
+$('.specialist__achievements-slider--diplom').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:
+    '<img class="specialist__achievements-slider__left" src="images/arrow-left-black.svg" alt="">',
+  nextArrow:
+    '<img class="specialist__achievements-slider__right" src="images/arrow-right-black.svg" alt="">',
+});
+
+$('.specialist__achievements-slider--diplom').on(
+  'afterChange',
+  function (event, slick, currentSlide) {
+    $('#pagination--diplom').text(currentSlide + 1);
+  }
+);
+
+
 $('.diplom__slider').slick({
   infinite: true,
   slidesToShow: 6,
@@ -282,6 +332,10 @@ $('.marquee__two').marquee({
   pauseOnHover: true
 });
 
+$('.slots__time-value').click(function () {
+  $(this).toggleClass('slots__time-value__selected')
+})
+
 $('.marquee__three').marquee({
   duration: 10000,
   gap: 50,
@@ -306,6 +360,13 @@ $(".direction__scroll").click(function() {
   }, 1000);
  });
 
+ $('.js-select2').select2({
+  placeholder: "Список врачей",
+  maximumSelectionLength: 2,
+  language: "ru",
+  width: 'resolve'
+});
+
 $('.js-chosen').chosen({
   max_selected_options: 5,
   width: '100%',
@@ -317,6 +378,36 @@ $('.chosen-container').click(function () {
   $(".chosen-drop").addClass("show")
 });
 
+$.datepicker.regional['ru'] = {
+	closeText: 'Закрыть',
+	prevText: 'Предыдущий',
+	nextText: 'Следующий',
+	currentText: 'Сегодня',
+	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	weekHeader: 'Не',
+	dateFormat: 'dd.mm.yy',
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);
+$(function(){
+  $("#datepicker").datepicker({
+		beforeShowDay: function(date){
+			var dayOfWeek = date.getDay();
+			if (dayOfWeek == 0 || dayOfWeek == 6){
+				return [false];
+			} else {
+				return [true];
+			}
+		}
+	});
+});
 $('.btn--description').click(function () {
   $(this).toggleClass("active");
   $(this).siblings(".description__block").toggleClass("open");
@@ -356,22 +447,37 @@ for (var i = 0; i < btns.length; i++) {
 
 $(function () {
   $('.info__accordion .info__accordion-item:nth-child(1) .info__accordion-header');
-  // $('.info__accordion .info__accordion-item:nth-child(1) .info__accordion-content').slideDown(); //добавляет класс active первому элементу
   $('.info__accordion-header').on('click', function () {
-    if ($(this).hasClass('active')) {
-      $(this).siblings('.info__accordion-content').slideUp();
-      $(this).removeClass('active');
-    }
-    else {
-      // $('.info__accordion-content').slideUp();
-      // $('.info__accordion-header').removeClass('active');
-      $(this).siblings('.info__accordion-content').slideToggle();
+      $(this).siblings('.info__accordion-content').toggleClass('active');
       $(this).toggleClass('active');
-    }
   });
 });
 
-document.querySelector('select').onchange = function() {window.location = this.value}
+/* Filter
+    =====================*/
+    let filter = $("[data-filter]");
+
+    filter.on("click", function(event) {
+        event.preventDefault();
+
+        let cat = $(this).data('filter');
+      
+        if(cat == 'all') {
+            $("[data-cat]").removeClass("hide");
+        } else {
+            $("[data-cat]").each(function() {
+                let workCat = $(this).data('cat');
+
+                if(workCat != cat) {
+                    $(this).addClass('hide');
+                } else {
+                    $(this).removeClass('hide');
+                }
+            });
+        }
+    });
+
+// document.querySelector('select').onchange = function() {window.location = this.value}
 
 var mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';
 mapTitle.textContent = 'Для активации карты нажмите по ней';
