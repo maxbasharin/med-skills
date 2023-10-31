@@ -35,12 +35,19 @@
         font-size: 40px;
     }
 
+    &-small {
+        font-size: 28px;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
     &-gradient {
         padding: 20px;
         text-align: center;
         color: #fff;
         border-radius: 15px;
-        background: linear-gradient(91deg, #005DFF 0.17%, #FD3C76 99.9%);
+        background: rgb(0,93,255);
+        background: linear-gradient(90deg, rgba(0,93,255,1) 0%, rgba(126,0,255,1) 35%, rgba(253,60,118,1) 100%);
     }
 }
 

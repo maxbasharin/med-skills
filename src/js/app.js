@@ -435,15 +435,17 @@ const swiper = new Swiper('.standart__slider', {
   speed: 500,
 })
 
-var header = document.getElementById("advantages-clinic__sidebar-tabs");
-var btns = header.getElementsByClassName("advantages-clinic__sidebar-tabs__item");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+ var tabs = $(".advantages-clinic__sidebar-tabs__item");
+ tabs.click(function() {
+   $(".advantages-clinic__sidebar-tabs__item.active").removeClass("active");
+   $(this).addClass("active");
+ });
+
+ var tabs = $(".specialist__services-nav__item");
+ tabs.click(function() {
+   $(".specialist__services-nav__item.active").removeClass("active");
+   $(this).addClass("active");
+ });
 
 $(function () {
   $('.info__accordion .info__accordion-item:nth-child(1) .info__accordion-header');
@@ -452,6 +454,30 @@ $(function () {
       $(this).toggleClass('active');
   });
 });
+
+/* Filter
+    =====================*/
+    let filterDoc = $("[data-filter-doc]");
+
+    filterDoc.on("click", function(event) {
+        event.preventDefault();
+
+        let cat = $(this).data('filter-doc');
+      
+        if(cat == 'all') {
+            $("[data-cat-doc]").removeClass("hide");
+        } else {
+            $("[data-cat-doc]").each(function() {
+                let workCatDoc = $(this).data('cat-doc');
+
+                if(workCatDoc != cat) {
+                    $(this).addClass('hide');
+                } else {
+                    $(this).removeClass('hide');
+                }
+            });
+        }
+    });
 
 /* Filter
     =====================*/

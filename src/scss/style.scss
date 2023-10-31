@@ -1318,7 +1318,7 @@
 }
 
 .news {
-  padding: 160px 0;
+  padding: 60px 0;
 
   .title {
     .link {
@@ -3117,7 +3117,7 @@
 }
 
 .services {
-  padding: 120px 0;
+  padding: 60px 0;
 
   &__top {
     text-align: center;
@@ -4393,6 +4393,8 @@
     }
 
     &-text {
+      font-size: 18px;
+      line-height: normal;
       margin-right: 20px;
     }
   }
@@ -4788,6 +4790,7 @@
         border-radius: 15px;
         color: $blackColor;
         background-color: $grayLightColor;
+     
 
         &:hover {
           background-color: #fff;
@@ -4815,14 +4818,7 @@
 
       }
 
-      &__header {
-        font-size: 18px;
-        line-height: normal;
-        font-weight: 700;
-        position: relative;
-        height: 100px;
-        width: 200px;
-      }
+     
 
       &__img {
         margin-top: 10px;
@@ -4841,7 +4837,13 @@
             cursor: pointer;
             list-style: disc;
             margin-bottom: 12px;
-
+            display: flex;
+            justify-content: space-between;
+            .price {
+              width: 180px;
+              color: #878787;
+              text-align: right;
+            }
             &:hover {
               text-decoration: underline;
             }
@@ -5034,7 +5036,7 @@
    &__wrapper {
     position: relative;
   
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 15px;
     background-color: $blueColor;
    }
@@ -5050,7 +5052,7 @@
       height: max-content;
       margin: 15px 8px;
       border-radius: 15px;
-      box-shadow: $blockBoxShadowBlue;
+      box-shadow: $blockBoxShadowGray;
       width: 360px;
       background-color: #fff;
     
@@ -5070,7 +5072,8 @@
         padding: 0 20px 0 20px;
         margin-bottom: 16px;
         border-radius: 15px;
-        background-color: $grayLightColor;
+        background: url(../images/slots-doctor-bg.png);
+        background-repeat: no-repeat;
         img {
           margin-top: -20px;
           width: 200px;
@@ -5116,7 +5119,7 @@
       margin: 15px 8px;
       .ui-widget.ui-widget-content {
         border: none;
-        box-shadow: $blockBoxShadowBlue;
+        box-shadow: $blockBoxShadowGray;
         border-radius: 15px;
         padding: 24px;
       }
@@ -5214,7 +5217,7 @@
       margin: 15px 8px;
       border-radius: 15px;
       padding: 40px 20px;
-      box-shadow: $blockBoxShadowBlue;
+      box-shadow: $blockBoxShadowGray;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
@@ -5251,7 +5254,7 @@
       padding: 30px 40px;
       border-radius: 15px;
       background-color: #fff;
-      box-shadow: $blockBoxShadowBlue;
+      box-shadow: $blockBoxShadowGray;
       &-wrapper {
       display: flex;
       justify-content: space-between;
@@ -5269,6 +5272,79 @@
     font-size: 12px;
     line-height: 14px;
       }
+    }
+  }
+}
+
+.services {
+  .title {
+    text-align: center;
+    &-small {
+      text-align: left;
+      color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      margin-right: 24px;
+      background-color: $blackColor;
+    }
+  }
+  &__list {
+    margin-bottom: 30px;
+    &-btn {
+      width: 100%;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+     
+      font-size: 20px;
+      height: 50px;
+      font-weight: 700;
+      text-align: center;
+      align-items: center;
+      border: 1px solid $blackColor;
+      transition: all 0.1s linear;
+    }
+    &-img {
+      img {
+        border-radius: 15px;
+      }
+    }
+    &-info {
+      padding: 5px 5px 5px 20px;
+    }
+    &-item {
+      display: flex;
+      width: 23%;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 15px;
+      border: $borderLneGray;
+      cursor: pointer;
+      transition: all 0.1s linear;
+      &:hover {
+        border: 2px solid #fff;
+        box-shadow: $blockBoxShadowGray;
+        .services__list-name {
+          color: $blueColor;
+        }
+        .services__list-btn {
+          color: #fff;
+          background-color: $blueColor;
+          border: 1px solid #fff;
+        }
+      }
+    }
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-name {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &-price {
+      color: #878787;
     }
   }
 }

@@ -440,7 +440,7 @@
 
                                     </ul>
                                     <button class="btn direction__scroll" type="button">
-                                        Выбрать направление
+                                        Выбрать услугу
                                     </button>
                                 </div>
                                 <div class="intro__wrapper-video">
@@ -488,7 +488,7 @@
                             </div>
                         </div>
                         <div class="intro__wrapper-nav">
-                            <div class="intro__container-nav wow fadeInUp" data-wow-delay=".5s">
+                            <div class="intro__container-nav">
                                 <div class="intro__container-nav__title">
                                     <h3 class="intro__nav-title">Полезная <br />информация</h3>
                                     <svg class="icon-useful">
@@ -532,7 +532,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="intro__container-nav wow fadeInUp" data-wow-delay=".5s">
+                            <div class="intro__container-nav">
                                 <div class="intro__container-nav__title">
                                     <h3 class="intro__nav-title">
                                         Важная <br />
@@ -589,12 +589,7 @@
                                             Использование современного оборудования
                                         </p>
                                         <p class="advantages-clinic__item-text">
-                                            В нашей клинике, входящей в структуру медицинского Института «МедСкиллс»,
-                                            имеющего федеральную лицензию, используются самые современные УЗИ аппараты
-                                            от
-                                            производителей мирового уровня, которые обеспечивают высокий уровень
-                                            визуализации и диагностики. Это позволяет выявить даже самые незначительные
-                                            изменения в органах и тканях
+                                            В клинике «МедСкиллс» используются современные УЗИ аппараты от мировых производителей. Они позволяют выявить даже самые незначительные изменения в органах и тканях.
                                         </p>
                                     </div>
                                     <div class="advantages-clinic__slider">
@@ -630,12 +625,7 @@
                                             Высокий уровень квалификации специалистов
                                         </p>
                                         <p class="advantages-clinic__item-text">
-                                            Наши врачи ультразвуковой диагностики имеют беспрецендентный многолетний
-                                            опыт работы в лучших медицинских учреждениях региона, стояли у истоков
-                                            многих новых видов ультразвуковых исследований в России и за ее пределами.
-                                            За годы своей клинической практики сталкивались со многими патологиями и
-                                            смогут достоверно описать визуализирующуюся на УЗИ картину Вашего
-                                            заболевания
+                                            Врачи УЗИ нашей клиники имеют многолетний опыт работы и высокую квалификацию. Они смогут достоверно описать результаты вашего исследования.
                                         </p>
                                     </div>
                                     <div class="advantages-clinic__slider">
@@ -671,11 +661,7 @@
                                             Научная направленность
                                         </p>
                                         <p class="advantages-clinic__item-text">
-                                            Наша клиника создана на базе кафедры ультразвуковой диагностики Института,
-                                            на которой не только врачуют, но и ведут научную работу наши специалисты.
-                                            Научное сотрудничество кафедры имеет очень широкую географию, мы
-                                            сотрудничаем со многими кафедрами УЗД ведущих вузов России. Это позволяет
-                                            нам достоверно диагностировать даже самые редкие и сложные случаи
+                                            Наша клиника основана на базе кафедры УЗИ Института, где наши специалисты занимаются научной работой и сотрудничают с ведущими кафедрами УЗД России. Это позволяет нам достоверно диагностировать даже самые редкие и сложные случаи.
                                         </p>
                                     </div>
                                     <div class="advantages-clinic__slider">
@@ -714,15 +700,15 @@
                                     <div class="advantages-clinic__sidebar-subtitle">
                                         Выберите специалиста
                                     </div>
-                                    <ul class="advantages-clinic__sidebar-tabs" id="advantages-clinic__sidebar-tabs">
-                                        <li class="advantages-clinic__sidebar-tabs__item active">
+                                    <ul class="advantages-clinic__sidebar-tabs">
+                                        <li class="advantages-clinic__sidebar-tabs__item active" data-filter-doc="dadayan">
                                             Дадаян А.Р.
                                         </li>
-                                        <li class="advantages-clinic__sidebar-tabs__item">
+                                        <li class="advantages-clinic__sidebar-tabs__item" data-filter-doc="bolotskov">
                                             Болоцков А.С.
                                         </li>
                                     </ul>
-
+                                  <div class="advantages-clinic__sidebar-tabs__wrapper" data-cat-doc="dadayan">
                                     <div class="advantages-clinic__sidebar-video">
                                         <p class="advantages-clinic__sidebar-header">Видео знакомство с врачом</p>
                                         <div class="advantages-clinic__sidebar-video__wrapper"
@@ -760,7 +746,46 @@
                                         </form>
 
                                     </div>
+                                  </div>
+                                  <div class="advantages-clinic__sidebar-tabs__wrapper hide" data-cat-doc="bolotskov">
+                                    <div class="advantages-clinic__sidebar-video">
+                                        <p class="advantages-clinic__sidebar-header">Видео знакомство с врачом</p>
+                                        <div class="advantages-clinic__sidebar-video__wrapper"
+                                            data-fancybox="video-teachers-dadayan" href="https://youtu.be/Le-eoYZLpa8">
+                                            <svg class="icon-play">
+                                                <use xlink:href="#icon-play"></use>
+                                            </svg>
+                                            <img src="images/advantages-clinic-sidebar-bolotskov.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="advantages-clinic__sidebar-form">
+                                        <p class="advantages-clinic__sidebar-header">Заполните форму, Вам перезвонят</p>
+                                        <form class="form" action="">
+                                            <label class="form__label">
+                                                <input type="text" class="input input-name" name="name"
+                                                    placeholder="Имя">
+                                            </label>
 
+                                            <label class="form__label">
+                                                <input type="text" class="input input-tel" name="phone"
+                                                    placeholder="Телефон">
+                                            </label>
+
+                                            <div class="consultation__btns">
+                                                <button class="btn btn--blue" type="button">Записаться на приём</button>
+                                                <div class="politican">
+                                                    Нажимая на кнопку, я соглашаюсь на
+                                                    <a class="link" href=""> обработку персональных данных</a> и
+                                                    с <a class="link" href="">
+                                                        правилами пользования Платформой
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>
@@ -1330,50 +1355,69 @@
                             </div>
                             <div class="specialist__services">
                                 <div class="specialist__services-title">
-                                    Ультразвуковая диагностика заболеваний
+                                    Ультразвуковые исследования
                                 </div>
                                 <ul class="specialist__services-nav">
-                                    <li class="specialist__services-nav__item  active" data-filter="head">Голова и шея
+                                    <li class="specialist__services-nav__item  active" data-filter="other">Мягкие ткани
                                     </li>
                                     <li class="specialist__services-nav__item" data-filter="heart">Сердечно-сосудистая
                                         система</li>
                                     <li class="specialist__services-nav__item" data-filter="abdominal">Органы брюшной
                                         полости</li>
-                                    <li class="specialist__services-nav__item" data-filter="joints">Узи суставов</li>
+                                    <li class="specialist__services-nav__item" data-filter="joints">УЗИ суставов</li>
                                     <li class="specialist__services-nav__item" data-filter="gynecology">Гинекология</li>
                                     <li class="specialist__services-nav__item" data-filter="urology">Урология</li>
-                                    <li class="specialist__services-nav__item" data-filter="other">Иное</li>
                                 </ul>
-                                <div class="specialist__services-tab" data-cat="head">
+                                <div class="specialist__services-tab" data-cat="other">
                                     <div class="specialist__services-tab__wrapper">
                                         <div class="specialist__services-tab__item">
-                                            <div class="specialist__services-tab__header">
-                                                Голова и шея
-                                                <div class="specialist__services-tab__img">
-                                                    <img src="images/icon-heart.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
                                             <ul>
-                                                <li> Ультразвуковое исследование селезенки</li>
-                                                <li> Ультразвуковое исследование печени</li>
-                                                <li> Ультразвуковое исследование гепатобиллиарной зоны</li>
-                                                <li> Ультразвуковое исследование гепатобиллиарной зоны с функциональными
-                                                    пробами</li>
-                                                <li> Ультразвуковое исследование желчного пузыря и протоков</li>
+                                                <li> <span>Ультразвуковое исследование мягких тканей (одна анатомическая зона)</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> <span>Ультразвуковое исследование сухожилий</span>
+                                                    <span class="price">700 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование лимфатических узлов (одна анатомическая зона)</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование слюнных желез</span>
+                                                    <span class="price">1100 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование плевральной полости</span>
+                                                    <span class="price">600 руб.</span>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="specialist__services-tab__item">
                                             <ul>
-                                                <li> Ультразвуковое исследование желчного пузыря с определением его
-                                                    сократимости</li>
-                                                <li> Ультразвуковое исследование поджелудочной железы</li>
-                                                <li> Ультразвуковое исследование органов брюшной полости (комплексное)
+                                                <li> 
+                                                    <span>Ультразвуковое исследование легких</span>
+                                                    <span class="price">2000 руб.</span>
                                                 </li>
-                                                <li> Ультразвуковое исследование забрюшинного пространства</li>
-                                                <li> Ультразвуковое определение жидкости в брюшной полости</li>
-                                                <li> Эластометрия печени</li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование щитовидной железы и паращитовидных желез</span>
+                                                    <span class="price">1200 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование паращитовидных желез</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование периферических нервов (одна анатомическая область)</span>
+                                                    <span class="price">1300 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование в режиме 3D</span>
+                                                    <span class="price">3000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Эластография щитовидной железы</span>
+                                                    <span class="price">3000 руб.</span>
+                                                </li>
                                             </ul>
                                         </div>
 
@@ -1422,34 +1466,482 @@
                                 </div>
                                 <div class="specialist__services-tab hide" data-cat="heart">
                                     <div class="specialist__services-tab__wrapper">
-                                        <div class="specialist__services-tab__item">
-                                            <div class="specialist__services-tab__header">
-                                                Сердечно-сосудистая система
-                                                <div class="specialist__services-tab__img">
-                                                    <img src="images/icon-heart.png">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="specialist__services-tab__item">
                                             <ul>
-                                                <li> УЗИ сердца (эхокардиография, ЭхоКГ)</li>
-                                                <li> Экстракраниальное триплексное исследование артериальной системы
-                                                    головного мозга</li>
-                                                <li> Ультразвуковая допплерография интракраниальных сосудов (УЗДГ)</li>
-                                                <li> УЗИ доплер сосудов ворот печени</li>
-                                                <li> Ультразвуковое триплексное исследование венозной системы нижних/
-                                                    верхних конечностей (одна конечность)</li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография артерий верхних конечностей</span>
+                                                    <span class="price">1750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография артерий нижних конечностей</span>
+                                                    <span class="price">1900 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография сосудов (артерий и вен) верхних конечностей</span>
+                                                    <span class="price">3300 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография сосудов (артерий и вен) нижних конечностей</span>
+                                                    <span class="price">3500 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография вен нижних конечностей</span>
+                                                    <span class="price">1900 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография вен верхних конечностей</span>
+                                                    <span class="price">1700 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование аорты</span>
+                                                    <span class="price">1600 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование брюшной аорты и ее висцеральных ветвей</span>
+                                                    <span class="price">1900 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование брюшного отдела аорты, подвздошных и общих бедренных артерий</span>
+                                                    <span class="price">2400 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование брахиоцефальных артерий с цветным допплеровским картированием кровотока</span>
+                                                    <span class="price">2000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование экстракраниальных отделов брахиоцефальных артерий</span>
+                                                    <span class="price">2000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное интракраниальных отделов брахиоцефальных артерий</span>
+                                                    <span class="price">2100 руб.</span>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="specialist__services-tab__item">
                                             <ul>
-                                                <li> УЗИ сердца (эхокардиография, ЭхоКГ)</li>
-                                                <li> Экстракраниальное триплексное исследование артериальной системы
-                                                    головного мозга</li>
-                                                <li> Ультразвуковая допплерография интракраниальных сосудов (УЗДГ)</li>
-                                                <li> УЗИ доплер сосудов ворот печени</li>
-                                                <li> Ультразвуковое триплексное исследование венозной системы нижних/
-                                                    верхних конечностей (одна конечность)</li>
+                                               
+                                                <li> 
+                                                    <span>Дуплексное сканирование сосудов поджелудочной железы</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование сосудов печени</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование сосудов гепатобиллиарной зоны</span>
+                                                    <span class="price">1600 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Триплексное сканирование вен</span>
+                                                    <span class="price">1900 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Триплексное сканирование нижней полой вены, подвздошных вен и вен нижних конечностей (комплексное)</span>
+                                                    <span class="price">4000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование сосудов щитовидной железы</span>
+                                                    <span class="price">700 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование транскраниальное артерий и вен</span>
+                                                    <span class="price">3000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование сосудов селезенки</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование сосудов малого таза</span>
+                                                    <span class="price">1000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование нижней полой и почечных вен</span>
+                                                    <span class="price">1700 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковая допплерография маточных артерий</span>
+                                                    <span class="price">1800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Дуплексное сканирование нижней полой вены и вен портальной системы</span>
+                                                    <span class="price">2800 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="specialist__billet">
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-sun">
+                                                <img loading="lazy" src="images/icon-sun.png">
+                                                <p>День</p>
+                                            </div>
+                                            <div class="specialist__billet-day">
+                                                <div class="specialist__billet-day__item">
+                                                    Пн
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Вт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Ср
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Чт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Пт
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Сб
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Вс
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-text">
+                                                прием только взрослых
+                                            </div>
+                                            <button class="btn btn--education btn--blue" type="button">
+                                                Записаться на прием
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="specialist__services-tab hide" data-cat="abdominal">
+                                    <div class="specialist__services-tab__wrapper">
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование селезенки</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование печени</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование гепатобиллиарной зоны</span>
+                                                    <span class="price">1800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование гепатобиллиарной зоны с функциональными пробами</span>
+                                                    <span class="price">2700 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование желчного пузыря и протоков</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование желчного пузыря с определением его сократимости</span>
+                                                    <span class="price">1300 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование поджелудочной железы</span>
+                                                    <span class="price">750 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование органов брюшной полости (комплексное)</span>
+                                                    <span class="price">1900 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование забрюшинного пространства</span>
+                                                    <span class="price">1300 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое определение жидкости в брюшной полости</span>
+                                                    <span class="price">500 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Эластометрия печени</span>
+                                                    <span class="price">2500 руб.</span>
+                                                </li>
+                                               
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="specialist__billet">
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-sun">
+                                                <img loading="lazy" src="images/icon-sun.png">
+                                                <p>День</p>
+                                            </div>
+                                            <div class="specialist__billet-day">
+                                                <div class="specialist__billet-day__item">
+                                                    Пн
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Вт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Ср
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Чт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Пт
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Сб
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Вс
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-text">
+                                                прием только взрослых
+                                            </div>
+                                            <button class="btn btn--education btn--blue" type="button">
+                                                Записаться на прием
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="specialist__services-tab hide" data-cat="joints">
+                                    <div class="specialist__services-tab__wrapper">
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование сустава</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование тазобедренного сустава</span>
+                                                    <span class="price">650 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="specialist__billet">
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-sun">
+                                                <img loading="lazy" src="images/icon-sun.png">
+                                                <p>День</p>
+                                            </div>
+                                            <div class="specialist__billet-day">
+                                                <div class="specialist__billet-day__item">
+                                                    Пн
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Вт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Ср
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Чт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Пт
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Сб
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Вс
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-text">
+                                                прием только взрослых
+                                            </div>
+                                            <button class="btn btn--education btn--blue" type="button">
+                                                Записаться на прием
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="specialist__services-tab hide" data-cat="gynecology">
+                                    <div class="specialist__services-tab__wrapper">
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование матки и придатков трансабдоминальное</span>
+                                                    <span class="price">1000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование матки и придатков трансвагиальное</span>
+                                                    <span class="price">1300 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование матки и придатков трансректальное</span>
+                                                    <span class="price">1500 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Эластография матки и придатков</span>
+                                                    <span class="price">2000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование шейки матки (УЗ-цервикометрия)</span>
+                                                    <span class="price">1200 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование молочных желез</span>
+                                                    <span class="price">1500 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование шейки матки (УЗ-цервикометрия)</span>
+                                                    <span class="price">1200 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование молочных желез</span>
+                                                    <span class="price">1500 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование молочных желез с допплеровским исследованием</span>
+                                                    <span class="price">1800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование фолликулогенеза</span>
+                                                    <span class="price">2000 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование органов малого таза комплексное (трансвагинальное и трансабдоминальное)</span>
+                                                    <span class="price">2300 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Эластография молочных желез</span>
+                                                    <span class="price">1700 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="specialist__billet">
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-sun">
+                                                <img loading="lazy" src="images/icon-sun.png">
+                                                <p>День</p>
+                                            </div>
+                                            <div class="specialist__billet-day">
+                                                <div class="specialist__billet-day__item">
+                                                    Пн
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Вт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Ср
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Чт
+                                                </div>
+                                                <div class="specialist__billet-day__item">
+                                                    Пт
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Сб
+                                                </div>
+                                                <div
+                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
+                                                    Вс
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="specialist__billet-item">
+                                            <div class="specialist__billet-text">
+                                                прием только взрослых
+                                            </div>
+                                            <button class="btn btn--education btn--blue" type="button">
+                                                Записаться на прием
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="specialist__services-tab hide" data-cat="urology">
+                                    <div class="specialist__services-tab__wrapper">
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование предстательной железы</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование предстательной железы трансректальное</span>
+                                                    <span class="price">2100 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование сосудов полового члена</span>
+                                                    <span class="price">1200 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование надпочечников</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование почек и надпочечников</span>
+                                                    <span class="price">1400 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование мочевыводящих путей</span>
+                                                    <span class="price">1800 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="specialist__services-tab__item">
+                                            <ul>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование почек</span>
+                                                    <span class="price">1100 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование мочеточников</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование мочевого пузыря</span>
+                                                    <span class="price">600 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование уретры</span>
+                                                    <span class="price">700 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span></span>
+                                                    <span class="price"> руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование мочевого пузыря с определением остаточной мочи</span>
+                                                    <span class="price">800 руб.</span>
+                                                </li>
+                                                <li> 
+                                                    <span>Ультразвуковое исследование органов мошонки</span>
+                                                    <span class="price">1800 руб.</span>
+                                                </li>
+
                                             </ul>
                                         </div>
 
@@ -1506,731 +1998,1165 @@
                         </h2>
                         <div class="step__inner">
                             <div class="step__item">
-                             
+
                                 <h4 class="step__item-title">
                                     <span class="step__item-num">1</span>
                                     Запись на исследование
                                 </h4>
                                 <div class="step__item-main">
-                                   <div class="slots__wrapper">
-                                    <div class="slots">
-                                        <div class="slots__item-wrapper">
-                                            <div class="slots__stages"><span>1.</span> Выберите врача</div>
-                                            <div class="slots__doctor">
-                                             
-                                                <select class="js-select2" name="doctor" placeholder="Список врачей">
-                                                    <option value=""></option>
-                                                    <option value="1">Дадаян Арсен Рудольфович</option>
-                                                    <option value="2">Болоцков Александр Сергеевич</option>	
-                                                    
-                                                </select>
-                                                <div class="slots__doctor-item">
-                                                    <div class="slots__doctor-img">
-                                                        <img src="images/dadayan.png">
+                                    <div class="slots__wrapper">
+                                        <div class="slots">
+                                            <div class="slots__item-wrapper">
+                                                <div class="slots__stages"><span>1.</span> Выберите врача</div>
+                                                <div class="slots__doctor">
+
+                                                    <select class="js-select2" name="doctor"
+                                                        placeholder="Список врачей">
+                                                        <option value=""></option>
+                                                        <option value="1">Дадаян Арсен Рудольфович</option>
+                                                        <option value="2">Болоцков Александр Сергеевич</option>
+
+                                                    </select>
+                                                    <div class="slots__doctor-item">
+                                                        <div class="slots__doctor-img">
+                                                            <img src="images/dadayan.png">
+                                                        </div>
+
+                                                        <ul class="slots__doctor-info">
+                                                            <li>Главврач, врач-УЗИ</li>
+                                                            <li>Принимает только взрослых<span
+                                                                    class="pinkColor">*</span></li>
+                                                        </ul>
                                                     </div>
-                                                   
-                                                    <ul class="slots__doctor-info">
-                                                        <li>Главврач, врач-УЗИ</li>
-                                                        <li>Принимает только взрослых<span class="pinkColor">*</span></li>
-                                                    </ul>
+
                                                 </div>
-                                           
+                                            </div>
+                                            <div class="slots__item-wrapper">
+                                                <div class="slots__stages"><span>2.</span> Выберите дату посещения</div>
+                                                <div class="slots__days">
+                                                    <div id="datepicker"></div>
+                                                    <input type="hidden" id="datepicker_value" value="01.08.2019">
+                                                </div>
+                                            </div>
+                                            <div class="slots__item-wrapper">
+                                                <div class="slots__stages"><span>3.</span> Выберите время посещения
+                                                </div>
+                                                <div class="slots__time">
+                                                    <div class="slots__time-value" data-timestamp="1699185900">10:05
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699187400">10:30
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699191900">10:50
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699185900">11:05
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699187400">11:30
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699191900">11:45
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699185900">12:05
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699187400">12:30
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699188900">12:55
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699191900">13:45
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699185900">15:05
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699187400">15:30
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699188900">15:55
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699191900">16:45
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699193400">17:10
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699194900">17:35
+                                                    </div>
+                                                    <div class="slots__time-value" data-timestamp="1699196400">18:00
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div>
+                                            <div class="slots__stages"><span>4.</span>Заполните форму</div>
+                                            <form class="slots__form" action="">
+
+                                                <div class="slots__form-wrapper">
+                                                    <input type="text" class="input input-name" name="name"
+                                                        placeholder="Введите Имя">
+                                                    <input type="text" class="input input-tel" name="phone"
+                                                        placeholder="Введите Телефон">
+                                                    <button class="btn btn--blue" type="button">Записаться</button>
+                                                </div>
+                                                <div class="politican">
+                                                    Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на
+                                                    <a class="link" href=""> обработку&nbsp;персональных&nbsp;данных</a>
+                                                    и
+                                                    с&nbsp;<a class="link" href="">
+                                                        правилами&nbsp;пользования Платформой
+                                                    </a>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="slots__item-wrapper">
-                                            <div class="slots__stages"><span>2.</span> Выберите дату посещения</div>
-                                        <div class="slots__days">
-                                            <div id="datepicker"></div>
-                                            <input type="hidden" id="datepicker_value" value="01.08.2019">
+                                        <div class="step__img-squares--one">
+                                            <img src="images/icon-squares-two.png">
                                         </div>
-                                        </div>
-                                        <div class="slots__item-wrapper">
-                                            <div class="slots__stages"><span>3.</span> Выберите время посещения</div>
-                                        <div class="slots__time">
-                                            <div class="slots__time-value" data-timestamp="1699185900">10:05</div>
-                                            <div class="slots__time-value" data-timestamp="1699187400">10:30</div>
-                                            <div class="slots__time-value" data-timestamp="1699191900">10:50</div>
-                                            <div class="slots__time-value" data-timestamp="1699185900">11:05</div>
-                                            <div class="slots__time-value" data-timestamp="1699187400">11:30</div>
-                                            <div class="slots__time-value" data-timestamp="1699191900">11:45</div>
-                                            <div class="slots__time-value" data-timestamp="1699185900">12:05</div>
-                                            <div class="slots__time-value" data-timestamp="1699187400">12:30</div>
-                                            <div class="slots__time-value" data-timestamp="1699188900">12:55</div>
-                                            <div class="slots__time-value" data-timestamp="1699191900">13:45</div>
-                                            <div class="slots__time-value" data-timestamp="1699185900">15:05</div>
-                                            <div class="slots__time-value" data-timestamp="1699187400">15:30</div>
-                                            <div class="slots__time-value" data-timestamp="1699188900">15:55</div>
-                                            <div class="slots__time-value" data-timestamp="1699191900">16:45</div>
-                                            <div class="slots__time-value" data-timestamp="1699193400">17:10</div>
-                                            <div class="slots__time-value" data-timestamp="1699194900">17:35</div>
-                                            <div class="slots__time-value" data-timestamp="1699196400">18:00</div>
-                                        </div>
+                                        <div class="step__img-squares--two">
+                                            <img src="images/icon-squares-three.png">
                                         </div>
                                     </div>
-                                   <div>
-                                    <div class="slots__stages"><span>4.</span>Заполните форму</div>
-                                    <form class="slots__form" action="">
-                                       
-                                        <div class="slots__form-wrapper">
-                                            <input type="text" class="input input-name" name="name" placeholder="Введите Имя">
-                                        <input type="text" class="input input-tel" name="phone" placeholder="Введите Телефон">
-                                        <button class="btn btn--blue" type="button">Записаться</button>
-                                        </div>
-                                        <div class="politican">
-                                            Нажимая на&nbsp;кнопку, я&nbsp;соглашаюсь на
-                                            <a class="link" href=""> обработку&nbsp;персональных&nbsp;данных</a> и
-                                            с&nbsp;<a class="link" href="">
-                                                правилами&nbsp;пользования Платформой
-                                            </a>
-                                        </div>
-                                </form>
-                                   </div>
-                                <div class="step__img-squares--one">
-                                    <img src="images/icon-squares-two.png">
-                                </div>
-                                <div class="step__img-squares--two">
-                                    <img src="images/icon-squares-three.png">
-                                </div>
-                                   </div>
                                 </div>
                             </div>
                             <div class="step__item">
-                            
+
                                 <h4 class="step__item-title">
                                     <span class="step__item-num">2</span>
                                     Проходите процедуру в кабинете УЗИ
                                 </h4>
                                 <div class="step__item-main">
-                                  <div class="step__item-main__wrapper">
-                                    <div class="step__item-main__title">
-                                        Адрес: г. Ростов-на-Дону, ул. Пушкинская, д. 106
+                                    <div class="step__item-main__wrapper">
+                                        <div class="step__item-main__title">
+                                            Адрес: г. Ростов-на-Дону, ул. Пушкинская, д. 106
+                                        </div>
+                                        <ul>
+                                            <li>Информацию о необходимости подготовки к ультразвуковому исследованию Вы
+                                                можете посмотреть здесь</li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li>Информацию о необходимости подготовки к ультразвуковому исследованию Вы можете посмотреть здесь</li>
-                                    </ul>
-                                  </div>
                                 </div>
-                             
+
                             </div>
                             <div class="step__item">
-                              
+
                                 <h4 class="step__item-title">
                                     <span class="step__item-num">3</span>
                                     Ждёте заключение УЗИ, рекомендации врача
                                 </h4>
                                 <div class="step__item-main step__item-main--bottom">
                                     <div class="step__item-main__wrapper">
-                                    <div class="step__item-main__title">
-                                        Мгновенный автоматический протокол
-                                    </div>
-                                    <ul>
-                                        <li>В течении нескольких минут после проведения исследования Вы получаете протокол УЗИ, разъяснения и рекомендации врача</li>
-                                    </ul>
+                                        <div class="step__item-main__title">
+                                            Мгновенный автоматический протокол
+                                        </div>
+                                        <ul>
+                                            <li>В течении нескольких минут после проведения исследования Вы получаете
+                                                протокол УЗИ, разъяснения и рекомендации врача</li>
+                                        </ul>
                                     </div>
                                 </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services">
+                    <div class="container">
+                        <h2 class="title">Ультразвуковые исследования</h2>
+                    </div>
+
+                    <div class="services__list">
+                        <h4 class="title title-small">Мягкие ткани (легкие, щитовидка, переферические нервы и др.)</h4>
+                        <div class="services__list-wrapper">
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование мягких тканей (одна анатомическая зона)
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование сухожилий
+                                    </div>
+                                    <div class="services__list-price">
+                                        700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование лимфатических узлов (одна анатомическая зона)
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование слюнных желез
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование плевральной полости
+                                    </div>
+                                    <div class="services__list-price">
+                                        600 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование легких
+                                    </div>
+                                    <div class="services__list-price">
+                                        2000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование щитовидной железы и паращитовидных желез
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 200 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование паращитовидных желез
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование периферических нервов (одна анатомическая область)
+                                    </div>
+                                    <div class="services__list-price">
+                                         1 300 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование в режиме 3D
+                                    </div>
+                                    <div class="services__list-price">
+                                         3 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Эластография щитовидной железы
+                                    </div>
+                                    <div class="services__list-price">
+                                         1 700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-btn">
+                                    Записаться на прием
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__list">
+                        <h4 class="title title-small">Сердечно-сосудистая система</h4>
+                        <div class="services__list-wrapper">
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография артерий верхних конечностей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография артерий нижних конечностей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография сосудов (артерий и вен) верхних конечностей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография сосудов (артерий и вен) нижних конечностей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография вен нижних конечностей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография вен верхних конечностей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование аорты
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование брюшной аорты и ее висцеральных ветвей
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование брюшного отдела аорты, подвздошных и общих бедренных
+                                        артерий
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование брахиоцефальных артерий с цветным допплеровским
+                                        картированием кровотока
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование экстракраниальных отделов брахиоцефальных артерий
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное интракраниальных отделов брахиоцефальных артерий
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование сосудов поджелудочной железы
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование сосудов поджелудочной железы
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование сосудов гепатобиллиарной зоны
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 600 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Триплексное сканирование вен
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 900 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Триплексное сканирование нижней полой вены, подвздошных вен и вен нижних
+                                        конечностей (комплексное)
+                                    </div>
+                                    <div class="services__list-price">
+                                        4 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Триплексное сканирование нижней полой вены, подвздошных вен и вен нижних
+                                        конечностей (комплексное)
+                                    </div>
+                                    <div class="services__list-price">
+                                        4 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование сосудов щитовидной железы
+                                    </div>
+                                    <div class="services__list-price">
+                                        700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование транскраниальное артерий и вен
+                                    </div>
+                                    <div class="services__list-price">
+                                        3000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование сосудов селезенки
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование сосудов малого таза
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование нижней полой и почечных вен
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковая допплерография маточных артерий
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Дуплексное сканирование нижней полой вены и вен портальной системы
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-btn">
+                                    Записаться на прием
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="services__list">
+                        <h4 class="title title-small">Органы брюшной полости</h4>
+                        <div class="services__list-wrapper">
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование селезенки
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование печени
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование гепатобиллиарной зоны
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование гепатобиллиарной зоны с функциональными пробами
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование желчного пузыря и протоков
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование желчного пузыря с определением его сократимости
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 300 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование поджелудочной железы
+                                    </div>
+                                    <div class="services__list-price">
+                                        750 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование органов брюшной полости (комплексное)
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 900 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование забрюшинного пространства
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 300 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое определение жидкости в брюшной полости
+                                    </div>
+                                    <div class="services__list-price">
+                                        500 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Эластометрия печени
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 500 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-btn">
+                                    Записаться на прием
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__list">
+                        <h4 class="title title-small">Суставы</h4>
+                        <div class="services__list-wrapper">
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование сустава
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование тазобедренного сустава
+                                    </div>
+                                    <div class="services__list-price">
+                                        650 ₽
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="services__list-item">
+                                <div class="services__list-btn">
+                                    Записаться на прием
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__list">
+                        <h4 class="title title-small">Урология</h4>
+                        <div class="services__list-wrapper">
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование предстательной железы
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование предстательной железы трансректальное
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование сосудов полового члена
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование надпочечников
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование почек и надпочечников
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 400 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование мочевыводящих путей
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование почек
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 100 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование мочеточников
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование мочевого пузыря
+                                    </div>
+                                    <div class="services__list-price">
+                                        600 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование уретры
+                                    </div>
+                                    <div class="services__list-price">
+                                        700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование мочевого пузыря с определением остаточной мочи
+                                    </div>
+                                    <div class="services__list-price">
+                                        800 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование органов мошонки
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 800 ₽
+                                    </div>
+                                </div>
+                            </div>
                             
+                            <div class="services__list-item">
+                                <div class="services__list-btn">
+                                    Записаться на прием
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__list">
+                        <h4 class="title title-small">Гинекология</h4>
+                        <div class="services__list-wrapper">
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование матки и придатков трансабдоминальное
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование матки и придатков трансвагиальное
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 300 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование матки и придатков трансректальное
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 500 ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Эластография матки и придатков
+                                    </div>
+                                    <div class="services__list-price">
+                                        2 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование шейки матки (УЗ-цервикометрия)
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 200 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование молочных желез
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 500 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование молочных желез с допплеровским исследованием
+                                    </div>
+                                    <div class="services__list-price">
+                                        1 800 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование фолликулогенеза
+                                    </div>
+                                    <div class="services__list-price">
+                                         2 000 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Ультразвуковое исследование органов малого таза комплексное (трансвагинальное и трансабдоминальное)
+                                    </div>
+                                    <div class="services__list-price">
+                                         2 300 ₽
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services__list-item">
+                                <div class="services__list-img">
+                                    <img src="images/services-1.jpg">
+                                </div>
+                                <div class="services__list-info">
+                                    <div class="services__list-name">
+                                        Эластография молочных желез
+                                    </div>
+                                    <div class="services__list-price">
+                                         1 700 ₽
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="services__list-item">
+                                <div class="services__list-btn">
+                                    Записаться на прием
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <section class="promising">
-                    <div class="container">
-                        <h2 class="title whiteColor wow fadeInLeft" data-wow-delay=".1s">Медицинским организациям
-                            требуются
-                            медицинские <br />и фармацевтические работники</h2>
-                        <div class="promising__container wow fadeIn" data-wow-delay=".2s">
-                            <div class="quote">
-                                <blockquote>
-                                    «Из всех наук, без сомнения, медицина самая благородная»
-                                </blockquote>
-                                <br />
-                                <cite>Гиппократ</cite>
-                                <br />
-                                <div class="quote__link">Источник: google</div>
-                                <svg class="icon-quote">
-                                    <use xlink:href="#icon-quote"></use>
-                                </svg>
-                            </div>
-
-                            <div class="promising__img wow fadeInRight" data-wow-delay=".2s">
-                                <img src="images/promising.png" />
-                            </div>
-                        </div>
-                        <div class="promising__inner">
-                            <div class="promising__item wow fadeInLeftBig" data-wow-delay=".1s">
-                                <div class="promising__item-title">Востребовано</div>
-                                <div class="promising__item-text">
-                                    Число медицинских вакансий в России выросло за год на 22%. Дефицит кадров в
-                                    здравоохранении нарастает.
-                                    Система здравоохранения остро нуждается в увеличении эффективного кадрового
-                                    обеспечения
-                                </div>
-                                <div class="promising__item-link">Источник: medvestnik.ru</div>
-                            </div>
-                            <div class="promising__item wow fadeInLeftBig" data-wow-delay=".2s">
-                                <div class="promising__item-title">Перспективно</div>
-                                <div class="promising__item-text">
-                                    С января по май 2023 года появилось около 305 тысяч новых
-                                    предложений. Для соискателей без опыта работы подходит почти половина вакансий
-                                </div>
-                                <div class="promising__item-link">
-                                    Источник: medvestnik.ru
-                                </div>
-                            </div>
-                            <div class="promising__item wow fadeInLeftBig" data-wow-delay=".3s">
-                                <div class="promising__item-title">Высокооплачиваемо</div>
-                                <div class="promising__item-text">
-
-                                    Размер предлагаемых зарплат также вырос: если в начале прошлого года медработникам
-                                    предлагали <br />в
-                                    среднем
-                                    34—70 тысяч рублей в месяц, то сегодня — 40—75 тысяч рублей
-                                </div>
-                                <div class="promising__item-link"> Источник: medvestnik.ru</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="search">
-                    <div class="container">
-                        <div class="search__container wow fadeInUp" data-wow-delay=".2s">
-                            <h2 class="title title-big">
-                                Найдите вашу будущую
-                                <span class="white__bg">специальность</span>
-                            </h2>
-                            <div class="search__block">
-
-                                <div class="search__block-content">
-                                    <svg class="icon-search">
-                                        <use xlink:href="#icon-search"></use>
-                                    </svg>
-
-                                    <select class="input search__input js-chosen" name="city">
-                                        <option value=""></option>
-                                        <option value="./ultrazvukovaya-diagnostika.html">Ультразвуковая диагностика
-                                        </option>
-                                        <option value="#">Ультразвуковая диагностика заболеваний органов пищеварительной
-                                            системы</option>
-                                        <option value="./sestrinskoye-delo.html">Сестринское дело</option>
-                                        <option value="./farmaciya.html">Фармация</option>
-                                        <option value="#">Оказание первой доврачебной помощи</option>
-
-                                    </select>
-
-                                </div>
-                                <button class="btn" type="button">Найти</button>
-                            </div>
-                            <div class="search__img">
-                                <img src="images/icon-squares-one.png" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="advantages">
-                    <div class="container">
-                        <div class="advantages__inner">
-                            <div class="advantages__item">
-                                <h2 class="title whiteColor wow fadeInLeft" data-wow-delay=".1s">Развивающая среда</h2>
-                                <div class="advantages__img wow fadeInLeft" data-wow-delay=".2s">
-                                    <img src="images/medskills.png" />
-                                </div>
-                            </div>
-                            <div class="advantages__item">
-                                <ul class="advantages__list">
-                                    <li class="advantages__list-item wow fadeInRight" data-wow-delay=".3s">
-                                        <svg class="advantages__icon">
-                                            <use xlink:href="#icon-simulation-equipment"></use>
-                                        </svg>
-                                        <p>Симуляционное оборудование</p>
-                                    </li>
-                                    <li class="advantages__list-item wow fadeInRight" data-wow-delay=".4s">
-                                        <svg class="advantages__icon">
-                                            <use xlink:href="#icon-digital-library"></use>
-                                        </svg>
-                                        <p>Электронная библиотека</p>
-                                    </li>
-                                    <li class="advantages__list-item wow fadeInRight" data-wow-delay=".5s">
-                                        <svg class="advantages__icon">
-                                            <use xlink:href="#icon-practice-teachers"></use>
-                                        </svg>
-                                        <p>Преподаватели-практики</p>
-                                    </li>
-                                    <li class="advantages__list-item wow fadeInRight" data-wow-delay=".6s">
-                                        <svg class="advantages__icon">
-                                            <use xlink:href="#icon-practice-bases"></use>
-                                        </svg>
-                                        <p>Базы практик</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="test">
-                    <div class="container">
-                        <div class="test__container wow fadeIn" data-wow-delay=".1s">
-                            <div class="test__item test__item-mobile">
-                                <div class="test__monoblock">
-                                    <div class="test__monoblock-img wow fadeInLeft" data-wow-delay=".1s">
-                                        <img src="images/monoblock.png" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="test__item">
-                                <h2 class="title title-big whiteColor wow fadeInRight" data-wow-delay=".2s">
-                                    Если не знаете,<br />
-                                    что выбрать, пройдите
-                                    <br />
-
-
-                                    <span class="white__bg wow fadeInRight" data-wow-delay=".3s">профориентационный
-                                        тест</span>
-                                </h2>
-                                <button class="btn wow fadeInRight" data-wow-delay=".4s" type="button">Пройти
-                                    тест</button>
-                            </div>
-                            <div class="test__img">
-                                <img src="images/icon-squares-two.png" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="logistics">
-                    <div class="container wow fadeInUp">
-                        <h2 class="title whiteColor">
-                            Материально-техническое обеспечение
-                        </h2>
-                        <div class="logistics__slider">
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-1.jpg)"></div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Институт МедСкиллс
-                                        </div>
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-
-                                                <li class="logistics__item">
-                                                    Место, где можно обучиться востребованным медицинским и
-                                                    фармацевтическим специальностям
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="logistics__input-block">
-                                            <input class="input logistics__input" type="text" placeholder="Телефон" />
-                                        </div>
-                                        <button class="btn" type="button">Поступить</button>
-                                        <div class="politician">
-                                            Нажимая кнопку, принимаю
-                                            <a class="link" href=""> условия политики </a> <br />и
-                                            <a class="link" href="">пользовательского соглашения</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-12.jpg)">
-                                    </div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Конференц зал
-                                        </div>
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-                                                <li class="logistics__item">
-
-                                                    Зал оснащен удобной специальной мебелью и техническими средствами
-                                                    для презентаций:
-                                                    <br />проектор,
-                                                    экран, звукоусиливающая аппаратура, системой вентиляции и
-                                                    кондиционирования воздуха.
-                                                </li>
-                                                <li class="logistics__item">
-                                                    Современная обстановка зала создает рабочую атмосферу для проведения
-                                                    мероприятий
-                                                    воспитательной работы, семинаров и конференций.
-                                                </li>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-13.jpg)">
-                                    </div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Современный аудиторный фонд
-                                        </div>
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-                                                <li class="logistics__item">
-                                                    Предназначен для проведения всех видов дисциплинарной и
-                                                    междисциплинарной подготовки,
-                                                    лабораторной, практической работы обучающихся.
-                                                </li>
-                                                <li class="logistics__item">
-                                                    Позволяет обеспечить интерактивную оживленную среду для максимальной
-                                                    вовлеченности студентов и
-                                                    ординаторов в учебный процесс.
-                                                </li>
-                                                <li class="logistics__item">
-                                                    Оснащен профессиональным оборудованием.
-                                                </li>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-11.jpg)">
-                                    </div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Спортивный зал площадью 640 м<sup>2</sup>
-                                        </div>
-
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-                                                <li class="logistics__item"> Позволяет проводить занятия по физической
-                                                    культуре (волейбол,
-                                                    баскетбол, гандбол, легкая
-                                                    атлетика, гимнастика).</li>
-
-                                                <li class="logistics__item"> Великолепное освещение и система
-                                                    кондиционирования воздуха.</li>
-
-                                                <li class="logistics__item"> Вместительные раздевалки.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-14.jpg)">
-                                    </div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Ультразвуковой диагностический аппарат <br />SAMSUNG RS85-RUS <br />с
-                                            принадлежностями:
-                                        </div>
-
-                                        <ul class="logistics__list">
-
-                                            <li class="logistics__item">
-                                                - датчик конвексный СА1-4А;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик линейный L3-12А;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик фазированный PM1-6А;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик внитриполостной ЕА2-11R;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик линейный LA2-11R;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик линейный LA2-9A
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-2.jpg)"></div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Аппарат ультразвуковой диагностики <br />Mindray DC-45 <br /> с
-                                            принадлежностями:
-                                        </div>
-
-                                        <ul class="logistics__list">
-
-                                            <li class="logistics__item">
-                                                - датчик линейный L12-3E;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик микроконвексный <br />внутриполостной V11-3$
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик секторный фазированный <br /> P4-2;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик конвексный С5-2
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-15.jpg)">
-
-                                    </div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Ультразвуковой диагностический аппарат <br />Philips CX50 xMATRIX
-                                            CompactXtreme <br />с
-                                            принадлежностями:
-                                        </div>
-
-                                        <ul class="logistics__list">
-
-                                            <li class="logistics__item">
-                                                - датчик S5-1;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик чреспищеводный Х7-2t;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик С5-1;
-                                            </li>
-
-                                            <li class="logistics__item">
-                                                - датчик С8-5
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик линейный L12-3;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик L12-5 50;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик секторный S8-3;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик секторный S12-4;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - датчик линейный LI5-7io
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-10.jpg)">
-                                    </div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Тренажер ультразвукового исследования SONOtrain
-                                        </div>
-
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-
-                                                <li class="logistics__item">
-                                                    Фантомное (симуляционное) оборудование, имитирующее медицинские
-                                                    манипуляции и вмешательства
-                                                    под контролем ультразвука.
-                                                </li>
-                                                <li class="logistics__item">
-                                                    Модель молочной железы с опухолями позволяет формировать необходимые
-                                                    профессиональные навыки
-                                                    ультразвукового исследования.
-                                                </li>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-5.jpg)"></div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Манекен-тренажер
-                                        </div>
-
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-
-                                                <li class="logistics__item">
-                                                    Аккредитационный тренажер, женский/мужской, для обучения навыкам
-                                                    сердечно-легочной реанимации.
-                                                </li>
-                                                <li class="logistics__item">
-                                                    Возможность регистрации результатов и их распечатки.
-                                                </li>
-                                                <li class="logistics__item">
-                                                    Тренажер-симулятор автоматического наружного дефибриллятора.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-9.jpg)"></div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Современная учебная литература
-                                        </div>
-
-                                        <div class="logistics__slider-item_text">
-                                            <ul class="logistics__list">
-
-                                                <li class="logistics__item">
-                                                    В учебном процесс используется современная профессиональная учебная
-                                                    литература.
-                                                </li>
-
-                                                <li class="logistics__item">
-                                                    Позволяет изучить не только классические, но и новые перспективные
-                                                    методы и технологии
-                                                    исследований.
-                                                </li>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="logistics__slider-wrapper">
-                                <div class="logistics__slider-item">
-                                    <div class="logistics__slider-item_img"
-                                        style="background-image: url(./images/logistics-7.jpg)"></div>
-                                    <div class="logistics__slider-item_content">
-                                        <div class="logistics__slider-item_title">
-                                            Оснащение кабинета «Безопасность жизнедеятельности»
-                                        </div>
-
-                                        <ul class="logistics__list">
-
-
-                                            <li class="logistics__item">
-                                                - общевойсковой защитный комплект;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - общевойсковой противогаз;
-                                            </li>
-                                            <li class="logistics__item">
-                                                - рентгенметр
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="pagination"><span id="pagination">1 </span> / 11</div>
-                    </div>
-                </section>
-
-                <section class="choosing">
-                    <div class="container">
-                        <div class="choosing__container wow fadeIn" data-wow-delay=".1s">
-                            <div class="choosing__item">
-                                <h2 class="title title-big wow fadeInLeft" data-wow-delay=".1s">
-                                    <span class="white__bg"> Поможем </span> &nbsp;в выборе!
-                                </h2>
-                                <div class="choosing__item-text wow fadeInLeft" data-wow-delay=".2s">
-                                    Если у вас есть вопросы о формате или вы не знаете, что
-                                    выбрать, оставьте свой номер — мы позвоним, чтобы ответить
-                                    на все ваши вопросы
-                                </div>
-                            </div>
-                            <div class="choosing__item">
-                                <form class="choosing__form wow fadeInRight" data-wow-delay=".3s" action="">
-                                    <label class="form__label">
-                                        <input type="text" class="input input-name" name="name" placeholder="Имя">
-                                    </label>
-                                    <label class="form__label">
-                                        <input type="text" class="input input-tel" name="phone"
-                                            placeholder="+7 (999) 999-99-99">
-                                    </label>
-                                    <label class="form__label">
-                                        <input type="text" class="input input-email" name="email"
-                                            placeholder="Электронная почта">
-                                    </label>
-                                    <div class="choosing__btns">
-                                        <div class="politican">
-                                            Нажимая на кнопку, я соглашаюсь на
-                                            <a class="link" href=""> обработку персональных данных</a> и
-                                            с <a class="link" href="">
-                                                правилами пользования Платформой
-                                            </a>
-                                        </div>
-                                        <button class="btn" type="button">Отправить</button>
-                                    </div>
-                                </form>
-                                <div class="choosing__squares-img">
-                                    <img src="images/icon-squares-two.png" />
-                                </div>
-
-                            </div>
-                            <div class="choosing__squares-img--three">
-                                <img src="images/icon-squares-three.png" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- <section class="diplom">
-          <div class="container wow fadeInDown" data-wow-delay=".1s">
-            <h2 class="title whiteColor">
-              После окончания обучения вы получите диплом
-            </h2>
-
-          </div>
-
-          <div class="diplom__slider wow fadeInUp" data-wow-delay=".1s">
-            <div class="diplom__slide">
-              <img src="images/diplom-1.jpg">
-            </div>
-            <div class="diplom__slide">
-              <img src="images/diplom-2.jpg">
-            </div>
-            <div class="diplom__slide">
-              <img src="images/diplom-3.jpg">
-            </div>
-            <div class="diplom__slide">
-              <img src="images/diplom-4.jpg">
-            </div>
-            <div class="diplom__slide">
-              <img src="images/diplom-5.jpg">
-            </div>
-            <div class="diplom__slide">
-              <img src="images/diplom-6.jpg">
-            </div>
-            <div class="diplom__slide">
-              <img src="images/diplom-7.jpg">
-            </div>
-          </div>
-        </section> -->
-
+                
                 <section class="news">
                     <div class="container">
                         <h2 class="title wow fadeInLeft" data-wow-delay=".1s">
@@ -2365,137 +3291,6 @@
                     </div>
 
                 </section>
-
-                <!-- <section class="reviews">
-          <div class="container">
-            <h2 class="title whiteColor wow fadeInLeft" data-wow-delay=".1s">Что говорят студенты</h2>
-
-          </div>
-          <div class="reviews__slider">
-            <div class="reviews__slider-wrapper wow fadeInUp" data-wow-delay=".2s">
-              <div class="reviews__slider-name">
-                Марина Мишкина, г. Таганрог
-              </div>
-              <div class="reviews__slider-course">
-                Курс: <span>"Ультразвуковая диагностика"</span>
-              </div>
-              <div class="reviews__slider-img">
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-              </div>
-              <div class="reviews__slider-text">
-                Проходил обучение с июля по декабрь. Обучение проходило на высшем уровне. Актуальные обучающие
-                материалы, вебинары, мастер-классы, обучение в удобное для меня время. Куратор оперативно отвечала,
-                решала все текущие вопросы. Спасибо организаторам курса!
-              </div>
-            </div>
-            <div class="reviews__slider-wrapper wow fadeInUp" data-wow-delay=".3s">
-              <div class="reviews__slider-name">
-                Марина Мишкина, г. Таганрог
-              </div>
-              <div class="reviews__slider-course">
-                Курс: <span>"Ультразвуковая диагностика"</span>
-              </div>
-              <div class="reviews__slider-img">
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-              </div>
-              <div class="reviews__slider-text">
-                Проходил обучение с июля по декабрь. Обучение проходило на высшем уровне. Актуальные обучающие
-                материалы, вебинары, мастер-классы, обучение в удобное для меня время. Куратор оперативно отвечала,
-                решала все текущие вопросы. Спасибо организаторам курса!
-              </div>
-            </div>
-            <div class="reviews__slider-wrapper wow fadeInUp" data-wow-delay=".4s">
-              <div class="reviews__slider-name">
-                Марина Мишкина, г. Таганрог
-              </div>
-              <div class="reviews__slider-course">
-                Курс: <span>"Ультразвуковая диагностика"</span>
-              </div>
-              <div class="reviews__slider-img">
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-              </div>
-              <div class="reviews__slider-text">
-                Проходил обучение с июля по декабрь. Обучение проходило на высшем уровне. Актуальные обучающие
-                материалы, вебинары, мастер-классы, обучение в удобное для меня время. Куратор оперативно отвечала,
-                решала все текущие вопросы. Спасибо организаторам курса!
-              </div>
-            </div>
-            <div class="reviews__slider-wrapper">
-              <div class="reviews__slider-name">
-                Марина Мишкина, г. Таганрог
-              </div>
-              <div class="reviews__slider-course">
-                Курс: <span>"Ультразвуковая диагностика"</span>
-              </div>
-              <div class="reviews__slider-img">
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-                <svg class="icon-star">
-                  <use xlink:href="#icon-star"></use>
-                </svg>
-              </div>
-              <div class="reviews__slider-text">
-                Проходил обучение с июля по декабрь. Обучение проходило на высшем уровне. Актуальные обучающие
-                материалы, вебинары, мастер-классы, обучение в удобное для меня время. Куратор оперативно отвечала,
-                решала все текущие вопросы. Спасибо организаторам курса!
-              </div>
-            </div>
-          </div>
-          <div class="pagination"><span id="pagination-reviews">1 </span> / 4</div>
-        </section> -->
-
                 <section class="consultation">
                     <div class="container">
                         <h2 class="title">
@@ -2550,228 +3345,11 @@
                     </div>
                 </section>
 
-                <section class="speciality">
-                    <div class="container">
-                        <h2 class="title whiteColor wow fadeInUp" data-wow-delay=".1s">
-                            Востребованные специальности
-                        </h2>
-
-                    </div>
-                    <div class="speciality__slider">
-                        <a href="./sestrinskoye-delo.html" class="speciality__slider-wrapper wow fadeInUp"
-                            data-wow-delay=".1s" style="background-color: #F2F4F4;">
-                            <div class="speciality__slide">
-                                <div class="speciality__slide-top">
-                                    <div class="speciality__slide-top_text">
-                                        <div class="speciality__slide-residency">
-                                            СПО
-                                        </div>
-                                        <div class="speciality__slide-name">
-                                            Сестринское <br /> дело
-                                        </div>
-                                    </div>
-                                    <div class="speciality__slide-top_img">
-                                        <img src="images/speciality-1.png">
-                                    </div>
-                                </div>
-                                <div class="speciality__slide-bottom">
-                                    От 40 000 по статистике hh.ru
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./farmaciya.html" class="speciality__slider-wrapper wow fadeInUp" data-wow-delay=".2s"
-                            style="background-color: #DFFF9A;">
-                            <div class="speciality__slide">
-                                <div class="speciality__slide-top">
-                                    <div class="speciality__slide-top_text">
-                                        <div class="speciality__slide-residency">
-                                            СПО
-                                        </div>
-                                        <div class="speciality__slide-name">
-                                            Фармация
-                                        </div>
-                                    </div>
-                                    <div class="speciality__slide-top_img">
-                                        <img src="images/speciality-2.png">
-                                    </div>
-                                </div>
-                                <div class="speciality__slide-bottom">
-                                    От 50 000 по статистике hh.ru
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./ultrazvukovaya-diagnostika.html" class="speciality__slider-wrapper wow fadeInUp"
-                            data-wow-delay=".3s" style="background-color: #E9C7EE;">
-                            <div class="speciality__slide">
-                                <div class="speciality__slide-top">
-                                    <div class="speciality__slide-top_text">
-                                        <div class="speciality__slide-residency">
-                                            Ординатура
-                                        </div>
-                                        <div class="speciality__slide-name">
-                                            Ультразвуковая
-                                            <br />
-                                            диагностика
-                                        </div>
-                                    </div>
-                                    <div class="speciality__slide-top_img">
-                                        <img src="images/speciality-3.png">
-                                    </div>
-                                </div>
-                                <div class="speciality__slide-bottom">
-                                    От 70 000 по статистике hh.ru
-                                </div>
-                            </div>
-                        </a>
-                        <div class="speciality__slider-wrapper wow fadeInUp" data-wow-delay=".4s"
-                            style="background-color: #CAF4EA;">
-                            <div class="speciality__slide">
-                                <div class="speciality__slide-top">
-                                    <div class="speciality__slide-top_text">
-                                        <div class="speciality__slide-residency">
-                                            Программа повышения квалификации
-                                        </div>
-                                        <div class="speciality__slide-name">
-                                            Ультразвуковая диагностика заболеваний органов пищеварительной системы
-                                        </div>
-                                    </div>
-                                    <div class="speciality__slide-top_img">
-                                        <img src="images/speciality-5.png">
-                                    </div>
-                                </div>
-                                <div class="speciality__slide-bottom">
-                                    ⠀
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speciality__slider-wrapper wow fadeInUp" data-wow-delay=".4s"
-                            style="background-color: #F5BF6A;">
-                            <div class="speciality__slide">
-                                <div class="speciality__slide-top">
-                                    <div class="speciality__slide-top_text">
-                                        <div class="speciality__slide-residency">
-                                            Программа дополнительного образования детей и взрослых
-                                        </div>
-                                        <div class="speciality__slide-name">
-                                            Оказание первой <br />доврачебной помощи
-                                        </div>
-                                    </div>
-                                    <div class="speciality__slide-top_img">
-                                        <img src="images/speciality-4.png">
-                                    </div>
-                                </div>
-                                <div class="speciality__slide-bottom">
-                                    ⠀
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="pagination"><span id="pagination-speciality">1&nbsp;</span>/ 5</div>
-                </section>
-
-                <section class="qrcode">
-                    <div class="container">
-                        <div class="qrcode__container wow fadeIn">
-                            <div class="qrcode__item">
-                                <h2 class="title title-big whiteColor wow fadeInLeft" data-wow-delay=".1s">
-                                    Скачай мобильное <br /> <span class="white__bg">приложение</span>
-                                </h2>
-                                <div class="qrcode__item-text wow fadeInLeft" data-wow-delay=".2s">
-                                    Посмотреть расписание занятий и успеваемость — все это в одном приложении
-                                </div>
-                                <div class="qrcode__link wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="link">
-                                        <img src="images/appstore.png" alt="">
-                                    </div>
-                                    <div class="link">
-                                        <img src="images/googleplay.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="qrcode__item">
-                                <div class="qrcode__item-img wow fadeInRight" data-wow-delay=".4s">
-                                    <img src="images/qr-code.svg">
-                                </div>
-                                <div class="qrcode__squares-img">
-                                    <img src="images/icon-squares-two.png">
-                                </div>
-
-                            </div>
-                            <div class="qrcode__squares-img--three">
-                                <img src="images/icon-squares-three.png">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="resources">
-                    <div class="container">
-                        <h2 class="title title-big whiteColor wow fadeInUp" data-wow-delay=".1s">
-                            Электронные ресурсы
-                        </h2>
-                    </div>
-                    <div class="resources__slider wow fadeInUp" data-wow-delay=".2s">
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="https://rospotrebnadzor.ru/" target="_blank" class="link">
-                                    <img src="images/resources-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="https://minobrnauki.gov.ru/" target="_blank" class="link">
-                                    <img src="images/resources-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="https://edu.gov.ru/" target="_blank" class="link">
-                                    <img src="images/resources-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="http://government.ru/" target="_blank" class="link">
-                                    <img src="images/resources-5.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="https://edu.ru/" target="_blank" class="link">
-                                    <img src="images/resources-6.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="https://obrnadzor.gov.ru/" target="_blank" class="link">
-                                    <img src="images/resources-7.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="resources__slide-wrapper">
-                            <div class="resources__slide">
-                                <a href="https://minzdrav.gov.ru/" target="_blank" class="link">
-                                    <img src="images/resources-8.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pagination"><span id="pagination-resources">1 </span> / 7</div>
-                </section>
-
                 <section class="location">
                     <div class="container">
                         <div class="location__wrapper wow fadeInLeft" data-wow-delay=".1s">
                             <h2 class="title title-big">
-                                МедСкиллс
+                             Клиника МедСкиллс
                             </h2>
                             <div class="location__item">
                                 <div class="location__name">
@@ -2817,12 +3395,9 @@
                         </div>
                     </div>
                     <div id="wrapMap" class="wow fadeIn">
-                        <iframe style="pointer-events: none;"
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfdf4df66f8dfefcb6a201365fdd4b915d8a1c2d934443b6adf89e4249bbbc80&amp;source=constructor"
-                            width="100%" height="520" frameborder="0"></iframe>
+                            <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af52002dafbeec782d3170ab1de30c950ebca3b888b5ac0fb3f0bffc6691bacb6&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
                     </div>
                 </section>
-
             </div>
         </main>
 
