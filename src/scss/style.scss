@@ -4835,7 +4835,7 @@
             line-height: normal;
             color: #535353;
             cursor: pointer;
-            list-style: disc;
+            list-style: none;
             margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
@@ -5693,6 +5693,19 @@
     padding-left: 0px;
     margin-top: 80px;
   }
+
+  .advantages {
+    &-clinic {
+      padding: 60px 0;
+      &__sidebar {
+        display: none;
+      }
+      &__inner {
+        margin-right: 0;
+      }
+    }
+ 
+  }
 }
 
 @media (max-width: 767px) {
@@ -5720,6 +5733,9 @@
         .icon-eye {
           margin-right: 0;
         }
+      }
+      &-sveden {
+        display: none;
       }
     }
 
@@ -6176,6 +6192,16 @@
     margin: 0;
   }
 
+  .advantages {
+    &-clinic {
+     &__item {
+      flex-direction: column;
+      &-text {
+        margin-bottom: 20px;
+      }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
