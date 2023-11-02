@@ -396,7 +396,7 @@
                     fill="#252525"></path>
             </symbol>
         </svg>
-        @@include('html/header.html', {})
+        @@include('html/header-clinic.html', {})
         <main class="main">
             <div data-observ>
                 <section class="intro">
@@ -440,7 +440,7 @@
 
                                     </ul>
                                     <button class="btn direction__scroll" type="button">
-                                        Выбрать услугу
+                                        Записаться на прием
                                     </button>
                                 </div>
                                 <div class="intro__wrapper-video">
@@ -792,7 +792,6 @@
                     </div>
                 </section>
 
-                <!--
                 <section class="specialist">
                     <div class="container">
                         <h2 class="title">
@@ -933,13 +932,13 @@
                                     </div>
                                     <div class="info__accordion">
                                         <div class="info__accordion-item">
-                                            <div class="info__accordion-header active">
+                                            <div class="info__accordion-header">
                                                 Повышение квалификации
                                                 <svg class="icon-triangle">
                                                     <use xlink:href="#icon-triangle"></use>
                                                 </svg>
                                             </div>
-                                            <div class="info__accordion-content active">
+                                            <div class="info__accordion-content">
                                                 <div class="specialist__achievements-slider--documents">
                                                     <div class="specialist__achievements-slider-wrapper">
                                                         <div class="specialist__achievements-item__slide"
@@ -1130,13 +1129,13 @@
                                     </div>
                                     <div class="info__accordion">
                                         <div class="info__accordion-item">
-                                            <div class="info__accordion-header active">
+                                            <div class="info__accordion-header ">
                                                 Апробация результатов исследований
                                                 <svg class="icon-triangle">
                                                     <use xlink:href="#icon-triangle"></use>
                                                 </svg>
                                             </div>
-                                            <div class="info__accordion-content active">
+                                            <div class="info__accordion-content info__accordion-content__list  ">
                                                 <ol class="info__accordion-list">
                                                     <li> Белик Б.М., Дадаян А.Р., Тенчурин Р.Ш., Пясецкий К.Г., Чиркинян
                                                         Г.М., Мареев Д.В.,
@@ -1200,7 +1199,7 @@
                                                     <use xlink:href="#icon-triangle"></use>
                                                 </svg>
                                             </div>
-                                            <div class="info__accordion-content">
+                                            <div class="info__accordion-content info__accordion-content__list">
                                                 <ol class="info__accordion-list">
                                                     <li> Белик Б.М., Чиркинян Г.М. , Тенчурин Р.Ш., Абдурагимов З.А.,
                                                         Мареев Д.В., Дадаян
@@ -1247,7 +1246,7 @@
                                                     <use xlink:href="#icon-triangle"></use>
                                                 </svg>
                                             </div>
-                                            <div class="info__accordion-content">
+                                            <div class="info__accordion-content info__accordion-content__list">
                                                 <ol class="info__accordion-list">
                                                     <li> Белик Б.М., Чиркинян Г.М. , Тенчурин Р.Ш., Абдурагимов З.А.,
                                                         Мареев Д.В., Дадаян
@@ -1294,7 +1293,7 @@
                                                     <use xlink:href="#icon-triangle"></use>
                                                 </svg>
                                             </div>
-                                            <div class="info__accordion-content">
+                                            <div class="info__accordion-content info__accordion-content__list">
                                                 <ol class="info__accordion-list">
                                                     <li> Белик Б.М., Дадаян А.Р., Тенчурин Р.Ш., Пясецкий К.Г., Чиркинян
                                                         Г.М., Мареев Д.В.,
@@ -1359,593 +1358,403 @@
                                     Ультразвуковые исследования
                                 </div>
                                 <ul class="specialist__services-nav">
-                                    <li class="specialist__services-nav__item  active" data-filter="other">Мягкие ткани
+                                    <li class="specialist__services-nav__item" data-filter="all">Все услуги
+                                    </li>
+                                    <li class="specialist__services-nav__item active" data-filter="other">Мягкие ткани
                                     </li>
                                     <li class="specialist__services-nav__item" data-filter="heart">Сердечно-сосудистая
                                         система</li>
                                     <li class="specialist__services-nav__item" data-filter="abdominal">Органы брюшной
                                         полости</li>
                                     <li class="specialist__services-nav__item" data-filter="joints">УЗИ суставов</li>
-                                    <li class="specialist__services-nav__item" data-filter="gynecology">Гинекология</li>
                                     <li class="specialist__services-nav__item" data-filter="urology">Урология</li>
+                                    <li class="specialist__services-nav__item" data-filter="gynecology">Гинекология</li>
+                                    
+                                   
                                 </ul>
-                                <div class="specialist__services-tab" data-cat="other">
-                                    <div class="specialist__services-tab__wrapper">
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> <span>Ультразвуковое исследование мягких тканей (одна анатомическая зона)</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> <span>Ультразвуковое исследование сухожилий</span>
-                                                    <span class="price">700 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование лимфатических узлов (одна анатомическая зона)</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование слюнных желез</span>
-                                                    <span class="price">1100 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование плевральной полости</span>
-                                                    <span class="price">600 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование легких</span>
-                                                    <span class="price">2000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование щитовидной железы и паращитовидных желез</span>
-                                                    <span class="price">1200 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование паращитовидных желез</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование периферических нервов (одна анатомическая область)</span>
-                                                    <span class="price">1300 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование в режиме 3D</span>
-                                                    <span class="price">3000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Эластография щитовидной железы</span>
-                                                    <span class="price">3000 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                    <div class="specialist__billet">
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-sun">
-                                                <img loading="lazy" src="images/icon-sun.png">
-                                                <p>День</p>
+                                <div class="specialist__services-tabs">
+                                    <div class="specialist__services-tab" data-cat="other">
+                                        <h6 class="specialist__services-tab__title">Мягкие ткани</h6>
+                                        <div class="specialist__services-tab__wrapper">
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> <span>Ультразвуковое исследование мягких тканей (одна анатомическая зона)</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> <span>Ультразвуковое исследование сухожилий</span>
+                                                        <span class="price">700 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование лимфатических узлов (одна анатомическая зона)</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование слюнных желез</span>
+                                                        <span class="price">1100 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование плевральной полости</span>
+                                                        <span class="price">600 руб.</span>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="specialist__billet-day">
-                                                <div class="specialist__billet-day__item">
-                                                    Пн
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Вт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Ср
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Чт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Пт
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Сб
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Вс
-                                                </div>
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование легких</span>
+                                                        <span class="price">2000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование щитовидной железы и паращитовидных желез</span>
+                                                        <span class="price">1200 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование паращитовидных желез</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование периферических нервов (одна анатомическая область)</span>
+                                                        <span class="price">1300 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование в режиме 3D</span>
+                                                        <span class="price">3000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Эластография щитовидной железы</span>
+                                                        <span class="price">3000 руб.</span>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-text">
-                                                прием только взрослых
-                                            </div>
-                                            <button class="btn btn--education btn--blue" type="button">
-                                                Записаться на прием
-                                            </button>
+    
                                         </div>
                                     </div>
-                                </div>
-                                <div class="specialist__services-tab hide" data-cat="heart">
-                                    <div class="specialist__services-tab__wrapper">
+                                    <div class="specialist__services-tab hide" data-cat="heart">
+                                        <h6 class="specialist__services-tab__title">Сердечно-сосудистая
+                                            система</h6>
+                                        <div class="specialist__services-tab__wrapper">
+                                            
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография артерий верхних конечностей</span>
+                                                        <span class="price">1750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография артерий нижних конечностей</span>
+                                                        <span class="price">1900 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография сосудов (артерий и вен) верхних конечностей</span>
+                                                        <span class="price">3300 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография сосудов (артерий и вен) нижних конечностей</span>
+                                                        <span class="price">3500 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография вен нижних конечностей</span>
+                                                        <span class="price">1900 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография вен верхних конечностей</span>
+                                                        <span class="price">1700 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование аорты</span>
+                                                        <span class="price">1600 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование брюшной аорты и ее висцеральных ветвей</span>
+                                                        <span class="price">1900 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование брюшного отдела аорты, подвздошных и общих бедренных артерий</span>
+                                                        <span class="price">2400 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование брахиоцефальных артерий с цветным допплеровским картированием кровотока</span>
+                                                        <span class="price">2000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование экстракраниальных отделов брахиоцефальных артерий</span>
+                                                        <span class="price">2000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное интракраниальных отделов брахиоцефальных артерий</span>
+                                                        <span class="price">2100 руб.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                   
+                                                    <li> 
+                                                        <span>Дуплексное сканирование сосудов поджелудочной железы</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование сосудов печени</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование сосудов гепатобиллиарной зоны</span>
+                                                        <span class="price">1600 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Триплексное сканирование вен</span>
+                                                        <span class="price">1900 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Триплексное сканирование нижней полой вены, подвздошных вен и вен нижних конечностей (комплексное)</span>
+                                                        <span class="price">4000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование сосудов щитовидной железы</span>
+                                                        <span class="price">700 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование транскраниальное артерий и вен</span>
+                                                        <span class="price">3000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование сосудов селезенки</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование сосудов малого таза</span>
+                                                        <span class="price">1000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование нижней полой и почечных вен</span>
+                                                        <span class="price">1700 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковая допплерография маточных артерий</span>
+                                                        <span class="price">1800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Дуплексное сканирование нижней полой вены и вен портальной системы</span>
+                                                        <span class="price">2800 руб.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="specialist__services-tab hide" data-cat="abdominal">
+                                        <h6 class="specialist__services-tab__title">Органы брюшной
+                                            полости</h6>
+                                        <div class="specialist__services-tab__wrapper">
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование селезенки</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование печени</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование гепатобиллиарной зоны</span>
+                                                        <span class="price">1800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование гепатобиллиарной зоны с функциональными пробами</span>
+                                                        <span class="price">2700 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование желчного пузыря и протоков</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование желчного пузыря с определением его сократимости</span>
+                                                        <span class="price">1300 руб.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование поджелудочной железы</span>
+                                                        <span class="price">750 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование органов брюшной полости (комплексное)</span>
+                                                        <span class="price">1900 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование забрюшинного пространства</span>
+                                                        <span class="price">1300 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое определение жидкости в брюшной полости</span>
+                                                        <span class="price">500 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Эластометрия печени</span>
+                                                        <span class="price">2500 руб.</span>
+                                                    </li>
+                                                   
+    
+                                                </ul>
+                                            </div>
+    
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="specialist__services-tab hide" data-cat="joints">
+                                        <h6 class="specialist__services-tab__title">УЗИ суставов</h6>
+                                        <div class="specialist__services-tab__wrapper">
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование сустава</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование тазобедренного сустава</span>
+                                                        <span class="price">650 руб.</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                        </div>
                                         
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография артерий верхних конечностей</span>
-                                                    <span class="price">1750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография артерий нижних конечностей</span>
-                                                    <span class="price">1900 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография сосудов (артерий и вен) верхних конечностей</span>
-                                                    <span class="price">3300 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография сосудов (артерий и вен) нижних конечностей</span>
-                                                    <span class="price">3500 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография вен нижних конечностей</span>
-                                                    <span class="price">1900 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография вен верхних конечностей</span>
-                                                    <span class="price">1700 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование аорты</span>
-                                                    <span class="price">1600 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование брюшной аорты и ее висцеральных ветвей</span>
-                                                    <span class="price">1900 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование брюшного отдела аорты, подвздошных и общих бедренных артерий</span>
-                                                    <span class="price">2400 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование брахиоцефальных артерий с цветным допплеровским картированием кровотока</span>
-                                                    <span class="price">2000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование экстракраниальных отделов брахиоцефальных артерий</span>
-                                                    <span class="price">2000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное интракраниальных отделов брахиоцефальных артерий</span>
-                                                    <span class="price">2100 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                               
-                                                <li> 
-                                                    <span>Дуплексное сканирование сосудов поджелудочной железы</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование сосудов печени</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование сосудов гепатобиллиарной зоны</span>
-                                                    <span class="price">1600 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Триплексное сканирование вен</span>
-                                                    <span class="price">1900 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Триплексное сканирование нижней полой вены, подвздошных вен и вен нижних конечностей (комплексное)</span>
-                                                    <span class="price">4000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование сосудов щитовидной железы</span>
-                                                    <span class="price">700 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование транскраниальное артерий и вен</span>
-                                                    <span class="price">3000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование сосудов селезенки</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование сосудов малого таза</span>
-                                                    <span class="price">1000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование нижней полой и почечных вен</span>
-                                                    <span class="price">1700 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковая допплерография маточных артерий</span>
-                                                    <span class="price">1800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Дуплексное сканирование нижней полой вены и вен портальной системы</span>
-                                                    <span class="price">2800 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-
                                     </div>
-                                    <div class="specialist__billet">
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-sun">
-                                                <img loading="lazy" src="images/icon-sun.png">
-                                                <p>День</p>
+                                    <div class="specialist__services-tab hide" data-cat="gynecology">
+                                        <h6 class="specialist__services-tab__title">Гинекология</h6>
+                                        <div class="specialist__services-tab__wrapper">
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование матки и придатков трансабдоминальное</span>
+                                                        <span class="price">1000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование матки и придатков трансвагиальное</span>
+                                                        <span class="price">1300 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование матки и придатков трансректальное</span>
+                                                        <span class="price">1500 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Эластография матки и придатков</span>
+                                                        <span class="price">2000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование шейки матки (УЗ-цервикометрия)</span>
+                                                        <span class="price">1200 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование молочных желез</span>
+                                                        <span class="price">1500 руб.</span>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="specialist__billet-day">
-                                                <div class="specialist__billet-day__item">
-                                                    Пн
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Вт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Ср
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Чт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Пт
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Сб
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Вс
-                                                </div>
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование шейки матки (УЗ-цервикометрия)</span>
+                                                        <span class="price">1200 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование молочных желез</span>
+                                                        <span class="price">1500 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование молочных желез с допплеровским исследованием</span>
+                                                        <span class="price">1800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование фолликулогенеза</span>
+                                                        <span class="price">2000 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование органов малого таза комплексное (трансвагинальное и трансабдоминальное)</span>
+                                                        <span class="price">2300 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Эластография молочных желез</span>
+                                                        <span class="price">1700 руб.</span>
+                                                    </li>
+                                                </ul>
                                             </div>
+    
                                         </div>
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-text">
-                                                прием только взрослых
-                                            </div>
-                                            <button class="btn btn--education btn--blue" type="button">
-                                                Записаться на прием
-                                            </button>
-                                        </div>
+                                       
                                     </div>
-                                </div>
-                            
-                                <div class="specialist__services-tab hide" data-cat="abdominal">
-                                    <div class="specialist__services-tab__wrapper">
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование селезенки</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование печени</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование гепатобиллиарной зоны</span>
-                                                    <span class="price">1800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование гепатобиллиарной зоны с функциональными пробами</span>
-                                                    <span class="price">2700 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование желчного пузыря и протоков</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование желчного пузыря с определением его сократимости</span>
-                                                    <span class="price">1300 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование поджелудочной железы</span>
-                                                    <span class="price">750 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование органов брюшной полости (комплексное)</span>
-                                                    <span class="price">1900 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование забрюшинного пространства</span>
-                                                    <span class="price">1300 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое определение жидкости в брюшной полости</span>
-                                                    <span class="price">500 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Эластометрия печени</span>
-                                                    <span class="price">2500 руб.</span>
-                                                </li>
-                                               
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                    <div class="specialist__billet">
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-sun">
-                                                <img loading="lazy" src="images/icon-sun.png">
-                                                <p>День</p>
+                                    <div class="specialist__services-tab hide" data-cat="urology">
+                                        <h6 class="specialist__services-tab__title">Урология</h6>
+                                        <div class="specialist__services-tab__wrapper">
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование предстательной железы</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование предстательной железы трансректальное</span>
+                                                        <span class="price">2100 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование сосудов полового члена</span>
+                                                        <span class="price">1200 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование надпочечников</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование почек и надпочечников</span>
+                                                        <span class="price">1400 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование мочевыводящих путей</span>
+                                                        <span class="price">1800 руб.</span>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="specialist__billet-day">
-                                                <div class="specialist__billet-day__item">
-                                                    Пн
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Вт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Ср
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Чт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Пт
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Сб
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Вс
-                                                </div>
+                                            <div class="specialist__services-tab__item">
+                                                <ul>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование почек</span>
+                                                        <span class="price">1100 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование мочеточников</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование мочевого пузыря</span>
+                                                        <span class="price">600 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование уретры</span>
+                                                        <span class="price">700 руб.</span>
+                                                    </li>
+                                                  
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование мочевого пузыря с определением остаточной мочи</span>
+                                                        <span class="price">800 руб.</span>
+                                                    </li>
+                                                    <li> 
+                                                        <span>Ультразвуковое исследование органов мошонки</span>
+                                                        <span class="price">1800 руб.</span>
+                                                    </li>
+    
+                                                </ul>
                                             </div>
+    
                                         </div>
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-text">
-                                                прием только взрослых
-                                            </div>
-                                            <button class="btn btn--education btn--blue" type="button">
-                                                Записаться на прием
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="specialist__services-tab hide" data-cat="joints">
-                                    <div class="specialist__services-tab__wrapper">
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование сустава</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование тазобедренного сустава</span>
-                                                    <span class="price">650 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                    <div class="specialist__billet">
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-sun">
-                                                <img loading="lazy" src="images/icon-sun.png">
-                                                <p>День</p>
-                                            </div>
-                                            <div class="specialist__billet-day">
-                                                <div class="specialist__billet-day__item">
-                                                    Пн
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Вт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Ср
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Чт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Пт
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Сб
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Вс
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-text">
-                                                прием только взрослых
-                                            </div>
-                                            <button class="btn btn--education btn--blue" type="button">
-                                                Записаться на прием
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="specialist__services-tab hide" data-cat="gynecology">
-                                    <div class="specialist__services-tab__wrapper">
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование матки и придатков трансабдоминальное</span>
-                                                    <span class="price">1000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование матки и придатков трансвагиальное</span>
-                                                    <span class="price">1300 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование матки и придатков трансректальное</span>
-                                                    <span class="price">1500 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Эластография матки и придатков</span>
-                                                    <span class="price">2000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование шейки матки (УЗ-цервикометрия)</span>
-                                                    <span class="price">1200 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование молочных желез</span>
-                                                    <span class="price">1500 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование шейки матки (УЗ-цервикометрия)</span>
-                                                    <span class="price">1200 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование молочных желез</span>
-                                                    <span class="price">1500 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование молочных желез с допплеровским исследованием</span>
-                                                    <span class="price">1800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование фолликулогенеза</span>
-                                                    <span class="price">2000 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование органов малого таза комплексное (трансвагинальное и трансабдоминальное)</span>
-                                                    <span class="price">2300 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Эластография молочных желез</span>
-                                                    <span class="price">1700 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                    <div class="specialist__billet">
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-sun">
-                                                <img loading="lazy" src="images/icon-sun.png">
-                                                <p>День</p>
-                                            </div>
-                                            <div class="specialist__billet-day">
-                                                <div class="specialist__billet-day__item">
-                                                    Пн
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Вт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Ср
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Чт
-                                                </div>
-                                                <div class="specialist__billet-day__item">
-                                                    Пт
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Сб
-                                                </div>
-                                                <div
-                                                    class="specialist__billet-day__item specialist__billet-day__item--weekend">
-                                                    Вс
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="specialist__billet-item">
-                                            <div class="specialist__billet-text">
-                                                прием только взрослых
-                                            </div>
-                                            <button class="btn btn--education btn--blue" type="button">
-                                                Записаться на прием
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="specialist__services-tab hide" data-cat="urology">
-                                    <div class="specialist__services-tab__wrapper">
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование предстательной железы</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование предстательной железы трансректальное</span>
-                                                    <span class="price">2100 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование сосудов полового члена</span>
-                                                    <span class="price">1200 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование надпочечников</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование почек и надпочечников</span>
-                                                    <span class="price">1400 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование мочевыводящих путей</span>
-                                                    <span class="price">1800 руб.</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="specialist__services-tab__item">
-                                            <ul>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование почек</span>
-                                                    <span class="price">1100 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование мочеточников</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование мочевого пузыря</span>
-                                                    <span class="price">600 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование уретры</span>
-                                                    <span class="price">700 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span></span>
-                                                    <span class="price"> руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование мочевого пузыря с определением остаточной мочи</span>
-                                                    <span class="price">800 руб.</span>
-                                                </li>
-                                                <li> 
-                                                    <span>Ультразвуковое исследование органов мошонки</span>
-                                                    <span class="price">1800 руб.</span>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
+                                       
                                     </div>
                                     <div class="specialist__billet">
                                         <div class="specialist__billet-item">
@@ -1992,7 +1801,7 @@
                             </div>
                         </div>
                 </section>
-
+               
                 <section class="step">
                     <div class="container">
                         <h2 class="title"><span class="pinkColor">3 шага </span>проведения ультразвуковой диагностики
@@ -2151,7 +1960,7 @@
                         </div>
                     </div>
                 </section>
-
+ 
                 <section class="services">
                     <div class="container">
                         <h2 class="title">Ультразвуковые исследования</h2>
@@ -3292,7 +3101,7 @@
                     </div>
 
                 </section>
-
+              
                 <section class="consultation">
                     <div class="container">
                         <h2 class="title">
@@ -3399,7 +3208,7 @@
                     <div id="wrapMap" class="wow fadeIn">
                             <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af52002dafbeec782d3170ab1de30c950ebca3b888b5ac0fb3f0bffc6691bacb6&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
                     </div>
-                </section> -->
+                </section> 
             </div>
         </main>
 

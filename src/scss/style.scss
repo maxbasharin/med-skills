@@ -4705,7 +4705,7 @@
     margin-bottom: 20px;
 
     &-item {
-      width: 48%;
+      width: 47%;
       padding: 30px 20px;
       background-color: #fff;
       border-radius: 15px;
@@ -4749,6 +4749,7 @@
 
     .pagination {
       margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 20px;
       text-align: center;
       color: $blackColor;
@@ -4763,6 +4764,7 @@
     &-title {
       font-size: 28px;
       font-weight: 700;
+      line-height: normal;
       text-align: center;
       margin-bottom: 26px;
     }
@@ -4774,11 +4776,11 @@
       padding: 20px;
       text-align: center;
       border-radius: 15px;
-      background-color: $grayLightColor;
+      background-color: $blueColor;
       background-image: url(../images/icon-hand.png);
       background-repeat: no-repeat;
       background-position: bottom 10px right;
-      margin-bottom: 24px;
+      margin-bottom: 0;
 
       &__item {
         font-size: 22px;
@@ -4788,16 +4790,18 @@
         transition: all .1s linear;
         font-weight: 700;
         border-radius: 15px;
-        color: $blackColor;
-        background-color: $grayLightColor;
-     
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: $blueColor;
 
         &:hover {
+          color: $blackColor;
           background-color: #fff;
           box-shadow: $blockBoxShadowGray;
         }
 
         &.active {
+          color: $blackColor;
           background-color: #fff;
           box-shadow: $blockBoxShadowGray;
         }
@@ -4808,7 +4812,12 @@
       background-color: #fff;
       padding: 20px;
       border-radius: 15px;
-
+      &__title {
+        font-size: 23px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+      }
       .specialist__billet {
         margin-bottom: 0;
       }
@@ -4824,9 +4833,6 @@
         margin-top: 10px;
       }
 
-      &__wrapper {
-        margin-bottom: 30px;
-      }
 
       &__item {
         ul {
@@ -4913,10 +4919,16 @@
     height: 0;
     padding: 0;
     padding: 0 20px;
-
+   
     &.active {
-      height: 400px;
+    
+      height: max-content;
       padding: 15px 20px 0 20px;
+    }
+    &__list {
+      &.active {
+        height: 400px;
+      }
     }
   }
 
@@ -4938,9 +4950,9 @@
       position: absolute;
       left: 50%;
       bottom: 10px;
-      transform: translate(-50%, -50%);
+    
       z-index: 1;
-      transform: rotate(270deg);
+      
     }
     &--two {
       position: absolute;
@@ -4978,8 +4990,9 @@
         }
       }
       &__title {
-        width: max-content;
+        width: fit-content;
         font-size: 20px;
+        line-height: normal;
         font-weight: 700;
         padding: 15px 20px;
         border-radius: 15px;
@@ -5033,6 +5046,9 @@
     display: flex;
     position: relative;
     z-index: 5;
+    &__item-wrapper {
+      width: 100%;
+    }
    &__wrapper {
     position: relative;
   
@@ -5216,7 +5232,7 @@
       height: max-content;
       margin: 15px 8px;
       border-radius: 15px;
-      padding: 40px 20px;
+      padding: 30px 10px;
       box-shadow: $blockBoxShadowGray;
       display: flex;
       flex-wrap: wrap;
@@ -5310,13 +5326,13 @@
       }
     }
     &-info {
-      padding: 5px 5px 5px 20px;
+      padding: 7px 5px 7px 12px;
     }
     &-item {
       display: flex;
       width: 23%;
-      margin: 10px;
-      padding: 10px;
+      margin: 7px;
+      padding: 0px;
       border-radius: 15px;
       border: $borderLneGray;
       cursor: pointer;
@@ -5705,6 +5721,99 @@
       }
     }
  
+  }
+
+  .specialist {
+    &__wrapper {
+      padding: 20px;
+    }
+    &__info {
+      &-photo {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__services {
+      &-tab {
+        padding: 0;
+      }
+    }
+  &__achievements {
+    &-header {
+      font-size: 22px;
+      line-height: normal;
+    }
+    .slick-slider {
+      .specialist__achievements-slider__left {
+        left: 22%;
+      }
+      .specialist__achievements-slider__right {
+        right: 14%;
+      }
+    }
+  }
+  }
+
+  .info {
+    &__accordion {
+      &-content{
+        &__list {
+          &.active {
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+  .step .slots {
+    display: flex;
+    flex-wrap: wrap;
+    &__days {
+      .ui-datepicker {
+        width: 100%;
+        max-width: 700px;
+      }
+    }
+  }
+  .services {
+    &__list {
+      &-item {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .specialist {
+    &__services {
+      &-tabs {
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 350px;
+        border-radius: 0;
+        padding: 0 10px;
+       
+       
+      }
+      &-tab {
+        &__wrapper {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .specialist__services-tab__item + .specialist__services-tab__item {
+    margin-left: 0;
+  }
+
+  .step {
+    &__img {
+      &-squares--one {
+        left: 0;
+      }
+    }
   }
 }
 
@@ -6202,6 +6311,110 @@
       }
     }
   }
+
+  .specialist {
+    &__info {
+      flex-direction: column;
+      &-main {
+        padding-top: 20px;
+        padding-right: 0;
+      }
+      &-photo {
+        img {
+          max-width: 300px;
+        }
+      }
+      &-prof {
+        max-width: 300px;
+        li + li {
+          margin-left: 5px;
+        }
+      }
+    }
+    &__billet {
+      flex-direction: column;
+      &-item {
+        width: 100%;
+      }
+    
+    }
+    &__achievements {
+      flex-direction: column;
+      &-item {
+        padding: 20px 0;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+    &__services {
+      &-nav {
+        padding: 10px;
+      }
+    }
+  }
+  .info {
+   
+    &__accordion {
+      &-content {
+        &__list {
+          &.active {
+            height: 300px;
+          }
+        }
+        &.active {
+        padding: 15px 5px 5px;
+        }
+      }
+    }
+  }
+  .specialist__billet-item + .specialist__billet-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .step {
+    .slots {
+      &__form {
+        padding: 10px;
+      }
+      &__wrapper {
+        padding: 10px;
+      }
+    }
+    &__item {
+      &-main {
+        padding-left: 20px;
+        &__wrapper {
+          padding: 10px;
+          ul {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+    .slots__form {
+      &-wrapper {
+        flex-direction: column;
+        .input {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .btn {
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .services {
+    &__list {
+      &-item {
+        width: 46%;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -6210,9 +6423,14 @@
   }
 
   .title {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    &-gradient {
+      padding: 10px;
+      font-size: 24px;
+      line-height: normal;
+    }
   }
 
   .icon-logo {
@@ -6589,4 +6807,120 @@
   .news-detail__post {
     margin-bottom: 40px;
   }
+
+  .advantages {
+    &-clinic {
+      padding: 30px 0;
+      &__slider {
+        max-width: 100%;
+      }
+      &__item {
+        &-text {
+          font-size: 16px;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .specialist {
+    padding: 30px 0;
+    &__wrapper {
+      padding: 10px;
+    }
+    &__info {
+      &-header {
+        font-size: 20px;
+      }
+    }
+    &__services {
+      padding: 20px 0 0 0;
+      &-nav {
+        margin-bottom: 18px;
+        &__item {
+          font-size: 18px;
+          padding: 12px 16px;
+        
+        }
+      }
+      &-tab {
+        padding: 0 10px;
+        padding-bottom: 10px;
+        &__item {
+          ul {
+            li {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    &__billet {
+      &-day {
+        &__item {
+          padding: 5px;
+          font-size: 14px;
+        }
+      }
+      .btn--blue {
+        font-size: 16px;
+        padding: 8px 12px;
+      }
+    }
+  }
+
+  .step {
+    .slots {
+      &__doctor {
+        width: 100%;
+        margin: 15px 0;
+        &-item {
+          padding: 15px;
+        }
+      }
+      &__days {
+        width: 100%;
+        margin: 15px 0;
+        .ui-widget.ui-widget-content {
+          padding: 15px;
+        }
+      }
+      &__time {
+        width: 100%;
+        margin: 15px 0;
+        padding: 15px 0;
+      }
+      &__form {
+        margin: 15px 0;
+      }
+    }
+    &__item {
+      &-title {
+        font-size: 24px;
+      }
+    }
+  }
+ .services {
+  padding: 0 0 30px 0;
+  .title {
+    &-small {
+      font-size: 23px;
+      line-height: normal;
+      padding: 10px 20px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    padding: 10px;
+    margin-bottom: 10px;
+    &-name {
+      font-weight: 400;
+    }
+    &-item {
+      width: 100%;
+    }
+  }
+ }
 }
