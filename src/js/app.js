@@ -413,6 +413,14 @@ $('.btn--description').click(function () {
   $(this).siblings(".description__block").toggleClass("open");
 });
 
+$('.sveden--clinica').click(function () {
+  $(this).toggleClass("active");
+  $('.header__top-sveden__list').toggleClass("open");
+});
+$('.has-sub-btn').click(function () {
+  $(this).siblings('.has-sub').toggleClass("open");
+});
+
 $('.getLink').click(function () {
   $(this).remove();
   var url = window.location.href;

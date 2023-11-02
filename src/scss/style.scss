@@ -58,6 +58,98 @@
 
     &-sveden {
       text-align: center;
+      &.sveden--clinica {
+        &.active {
+          border-radius: $mainRadius;
+          border: 1px solid $blackColor;
+         
+          .nav__link {
+            .icon-triangle {
+             transform: rotate(30deg);
+             right: 8px;
+             top: 9px;
+         }
+         }
+        }
+      }
+      &__wrapper {
+        position: relative;
+      }
+      &__list {
+        &.open {
+          display: block;
+        }
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        z-index: 10;
+       padding: 10px 20px 10px 30px;
+        border-radius: 15px;
+        box-shadow: $blockBoxShadowGray;
+        background-color: #fff;
+        .has-sub {
+          display: none;
+          margin-left: 30px;
+         
+          &.open {
+            display: block;
+          }
+        }
+        li {
+          padding: 4px 0;
+          margin: 7px 0;
+          a {
+            text-align: left;
+            font-size: 16px;
+            display: block;
+           
+            border-radius: 15px 15px 0 0;
+            border-bottom: $borderLneGray;
+            transition: all 0.1s linear;
+            &:hover {
+              text-decoration: underline;
+              color: $blueColor;
+            }
+          }
+          span {
+            position: relative;
+            text-align: left;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+            border-radius: 15px 15px 0 0;
+            border-bottom: $borderLneGray;
+            transition: all 0.1s linear;
+            &:hover {
+              text-decoration: underline;
+              color: $blueColor;
+            }
+            .icon-triangle {
+              transition: all 0.2s ease-out;
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              transform: translate(-50%, -50%);
+              z-index: 1;
+          }
+          }
+        }
+      }
+      .nav__link {
+        position: relative;
+        padding-right: 30px;
+        cursor: pointer;
+        .icon-triangle {
+          transition: all 0.2s ease-out;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+      }
+      }
     }
 
     &-impaired {
@@ -2054,7 +2146,11 @@
   font-size: 14px;
   background-color: #F3F6FF;
   padding: 40px 10px;
-
+p {
+  font-size: 16px;
+  text-indent: 20px;
+  margin: 10px 0;
+}
   ol {
     li {
       margin-bottom: 10px;
