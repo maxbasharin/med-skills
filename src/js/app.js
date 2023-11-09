@@ -102,6 +102,14 @@ $('.logistics__slider').on(
   }
 );
 
+$('.metodist-slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: 3000,
+  arrows: false
+});
+
 $('.specialist__achievements-slider--documents').slick({
   infinite: true,
   slidesToShow: 1,

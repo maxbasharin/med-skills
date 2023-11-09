@@ -477,6 +477,13 @@
   }
 }
 
+.fancybox-close-small{
+  color: #000;
+  & svg path{
+    fill: #000;
+  }
+}
+
 .intro {
   padding: 25px 0 60px;
   background-color: $grayLightColor;
@@ -1552,12 +1559,11 @@
 }
 
 .consultation {
-  padding: 160px 0;
-
+  padding-bottom: 160px;
   &__container {
     overflow: hidden;
     position: relative;
-    padding: 120px 60px;
+    padding: 60px 60px;
     border-radius: 15px;
     box-shadow: $blockBoxShadow;
     background: $blueColor;
@@ -1570,7 +1576,8 @@
     }
 
     .title-big {
-      line-height: 60px;
+      line-height: 40px;
+      margin-bottom: 35px;
     }
 
     .politican {
@@ -1643,10 +1650,40 @@
     margin-bottom: 20px;
   }
 
-  .input-tel {
-    margin-bottom: 20px;
-  }
+  .metodist__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    padding:5px;
+    max-width: 435px;
+    border-radius: 15px;
+    z-index: 2;
+    .slick-arrow{
+      display: none;
+    }
+    .metodist {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      align-items: center;
+      justify-content: center;
+      .metodist__name {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .metodist__img {
+        margin-bottom: 5px;
+      }
+      .metodist__img img {
+        border-radius: 15px;
+      }
+    }
+    .metodist-slider{
+      max-width: 435px;
+    }
 
+  }
 }
 
 .speciality {
@@ -6535,7 +6572,18 @@ p {
   .fancybox-content {
     padding: 20px;
   }
-
+  .services__list-item:last-child {
+    width: 100%;
+  }
+  .metodist__wrapper{
+    margin-bottom: 20px;
+    .metodist{
+      margin: 0px 5px;
+      .metodist__img img{
+        max-width: 90px;
+      }
+    }
+  }
   .title {
     font-size: 28px;
     line-height: 35px;
