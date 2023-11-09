@@ -306,6 +306,52 @@ $('.btn--application').click(function () {
   });
 });
 
+$('.btn--programm').click(function () {
+  $.fancybox.open({
+    src: '#form--programm',
+    type: 'inline'
+  });
+  let programm_item = $(this).children("div");
+  console.log($(this))
+  if (programm_item.length == 0){
+    programm_item = $(this).children("span");
+    var prog_name = programm_item[0].innerText;
+    var prog_price = programm_item[1].innerText.replace(" руб.","");
+    console.log(prog_price)
+  }else{
+    var prog_name = programm_item.children("div")[0].innerText;
+    var prog_price = programm_item.children("div")[1].innerText.replace(" ₽","");
+  }
+  $(".specialist__services-tab__item")
+  $("#form--programm").find("#inpt_programm_name").val(prog_name);
+  $("#form--programm").find("#inpt_programm_price").val(prog_price);
+  $("#form--programm").find(".title").text("Вы выбрали:");
+  $("#form--programm").find(".modal__subtitle.prog").text(prog_name);
+});
+
+$('.btn--education').click(function () {
+  $.fancybox.open({
+    src: '#form--zapis',
+    type: 'inline'
+  });
+  var item = $(this).children("div");
+  console.log(item)
+});
+
+$('.btn--zapis_kategory').click(function () {
+  $.fancybox.open({
+    src: '#form--zapis_kategory',
+    type: 'inline'
+  });
+  var kategory_item = $(this).parent("div").parent("div").parent("div").find(".title.title-small").text();
+  console.log(kategory_item);
+  // категория в заголовке:
+  // $("#form--zapis_kategory").find(".title").text("Запись на прием: "+kategory_item);
+  $("#id_programs_kategory").val(kategory_item);
+  // категория в подзаголовке:
+  $("#form--zapis_kategory").find(".modal__subtitle.kategor").text(kategory_item);
+});
+
 $(".accordion-titel").click(function () {
   $(".accordion-item").removeClass("show")
   $(this).parent(".accordion-item").addClass("show");
@@ -332,9 +378,74 @@ $('.marquee__two').marquee({
   pauseOnHover: true
 });
 
-$('.slots__time-value').click(function () {
-  $(this).toggleClass('slots__time-value__selected')
-})
+// Запись на исследование
+if ($('.slots') != undefined || $('.slots') != null){
+
+
+  $('.js-select2')
+  $('.js-select2').select2({
+    placeholder: "Список врачей",
+    maximumSelectionLength: 2,
+    language: "ru",
+    width: 'resolve'
+  });
+  // $('.slots__doctor-item').hide()
+  $(".select2").on("click", function() {
+    console.log("err")
+    hideShow()
+  });
+  $('.slots__doctor-item').hide()
+  function hideShow(){
+    if ($('.js-select2').val() == 0){
+
+    }else{
+      $('.slots__doctor-item').toggle()
+      console.log($('.js-select2').val())
+    }
+  }
+
+
+
+
+  $.datepicker.regional['ru'] = {
+    closeText: 'Закрыть',
+    prevText: 'Предыдущий',
+    nextText: 'Следующий',
+    currentText: 'Сегодня',
+    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    weekHeader: 'Не',
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+  };
+  $.datepicker.setDefaults($.datepicker.regional['ru']);
+  $(function(){
+    $("#datepicker").datepicker({
+      beforeShowDay: function(date){
+        var dayOfWeek = date.getDay();
+        if (dayOfWeek == 0 || dayOfWeek == 6){
+          return [false];
+        } else {
+          return [true];
+        }
+      }
+    });
+  });
+
+  $('.slots__time-value').click(function () {
+    $(this).toggleClass('slots__time-value__selected')
+  })
+
+}
+
+
+
 
 $('.marquee__three').marquee({
   duration: 10000,
@@ -360,12 +471,7 @@ $(".direction__scroll").click(function() {
   }, 1000);
  });
 
- $('.js-select2').select2({
-  placeholder: "Список врачей",
-  maximumSelectionLength: 2,
-  language: "ru",
-  width: 'resolve'
-});
+
 
 $('.js-chosen').chosen({
   max_selected_options: 5,
@@ -378,39 +484,18 @@ $('.chosen-container').click(function () {
   $(".chosen-drop").addClass("show")
 });
 
-$.datepicker.regional['ru'] = {
-	closeText: 'Закрыть',
-	prevText: 'Предыдущий',
-	nextText: 'Следующий',
-	currentText: 'Сегодня',
-	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-	weekHeader: 'Не',
-	dateFormat: 'dd.mm.yy',
-	firstDay: 1,
-	isRTL: false,
-	showMonthAfterYear: false,
-	yearSuffix: ''
-};
-$.datepicker.setDefaults($.datepicker.regional['ru']);
-$(function(){
-  $("#datepicker").datepicker({
-		beforeShowDay: function(date){
-			var dayOfWeek = date.getDay();
-			if (dayOfWeek == 0 || dayOfWeek == 6){
-				return [false];
-			} else {
-				return [true];
-			}
-		}
-	});
-});
+
 $('.btn--description').click(function () {
   $(this).toggleClass("active");
   $(this).siblings(".description__block").toggleClass("open");
+});
+
+$('.sveden--clinica').click(function () {
+  $(this).toggleClass("active");
+  $('.header__top-sveden__list').toggleClass("open");
+});
+$('.has-sub-btn').click(function () {
+  $(this).siblings('.has-sub').toggleClass("open");
 });
 
 $('.getLink').click(function () {
@@ -463,7 +548,7 @@ $(function () {
         event.preventDefault();
 
         let cat = $(this).data('filter-doc');
-      
+
         if(cat == 'all') {
             $("[data-cat-doc]").removeClass("hide");
         } else {
@@ -487,7 +572,7 @@ $(function () {
         event.preventDefault();
 
         let cat = $(this).data('filter');
-      
+
         if(cat == 'all') {
             $("[data-cat]").removeClass("hide");
         } else {
@@ -505,8 +590,10 @@ $(function () {
 
 // document.querySelector('select').onchange = function() {window.location = this.value}
 
-var mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';
+var mapTitle = document.createElement('div');
+mapTitle.className = 'mapTitle';
 mapTitle.textContent = 'Для активации карты нажмите по ней';
+
 wrapMap.appendChild(mapTitle);
 wrapMap.onclick = function () {
   this.children[0].removeAttribute('style');
@@ -521,5 +608,8 @@ wrapMap.onmouseleave = function () {
   mapTitle.style.display = 'none';
 }
 
-
-
+// клик по иконке вотсапа
+$('body').on('click', '.wthsbutton', function(e){
+  ym(49709299,'reachGoal','whtsapp');
+  window.open('https://api.whatsapp.com/send?phone=79514991999', '_blank');
+});

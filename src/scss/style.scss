@@ -16,7 +16,7 @@
 
 /* =======================================================================================================================
 * Библиотеки
-* раскомментировать для использования 
+* раскомментировать для использования
 */
 // @import 'libs/aos';
 // @import 'libs/swiper';
@@ -58,6 +58,98 @@
 
     &-sveden {
       text-align: center;
+      &.sveden--clinica {
+        &.active {
+          border-radius: $mainRadius;
+          border: 1px solid $blackColor;
+
+          .nav__link {
+            .icon-triangle {
+             transform: rotate(30deg);
+             right: 8px;
+             top: 9px;
+         }
+         }
+        }
+      }
+      &__wrapper {
+        position: relative;
+      }
+      &__list {
+        &.open {
+          display: block;
+        }
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        z-index: 10;
+       padding: 10px 20px 10px 30px;
+        border-radius: 15px;
+        box-shadow: $blockBoxShadowGray;
+        background-color: #fff;
+        .has-sub {
+          display: none;
+          margin-left: 30px;
+
+          &.open {
+            display: block;
+          }
+        }
+        li {
+          padding: 4px 0;
+          margin: 7px 0;
+          a {
+            text-align: left;
+            font-size: 16px;
+            display: block;
+
+            border-radius: 15px 15px 0 0;
+            border-bottom: $borderLneGray;
+            transition: all 0.1s linear;
+            &:hover {
+              text-decoration: underline;
+              color: $blueColor;
+            }
+          }
+          span {
+            position: relative;
+            text-align: left;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+            border-radius: 15px 15px 0 0;
+            border-bottom: $borderLneGray;
+            transition: all 0.1s linear;
+            &:hover {
+              text-decoration: underline;
+              color: $blueColor;
+            }
+            .icon-triangle {
+              transition: all 0.2s ease-out;
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              transform: translate(-50%, -50%);
+              z-index: 1;
+          }
+          }
+        }
+      }
+      .nav__link {
+        position: relative;
+        padding-right: 30px;
+        cursor: pointer;
+        .icon-triangle {
+          transition: all 0.2s ease-out;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+      }
+      }
     }
 
     &-impaired {
@@ -2054,7 +2146,11 @@
   font-size: 14px;
   background-color: #F3F6FF;
   padding: 40px 10px;
-
+p {
+  font-size: 16px;
+  text-indent: 20px;
+  margin: 10px 0;
+}
   ol {
     li {
       margin-bottom: 10px;
@@ -2232,7 +2328,7 @@
 .modal {
   border-radius: 15px;
   box-shadow: $blockBoxShadow;
-
+  max-width: 600px;
   &__requirements {
     max-width: 500px;
   }
@@ -4363,7 +4459,7 @@
   font-weight: 700;
 }
 
-////// clinica 
+////// clinica
 .advantages-clinic {
   padding: 120px 0 60px 0;
 
@@ -4827,7 +4923,7 @@
 
       }
 
-     
+
 
       &__img {
         margin-top: 10px;
@@ -4919,9 +5015,9 @@
     height: 0;
     padding: 0;
     padding: 0 20px;
-   
+
     &.active {
-    
+
       height: max-content;
       padding: 15px 20px 0 20px;
     }
@@ -4950,9 +5046,9 @@
       position: absolute;
       left: 50%;
       bottom: 10px;
-    
+
       z-index: 1;
-      
+
     }
     &--two {
       position: absolute;
@@ -4977,7 +5073,7 @@
       padding-left: 40px;
       padding-bottom: 40px;
       margin: 20px 0;
-     
+
       &__wrapper {
         border-radius: 15px;
         padding: 20px;
@@ -5051,14 +5147,14 @@
     }
    &__wrapper {
     position: relative;
-  
+
     padding: 30px 20px;
     border-radius: 15px;
     background-color: $blueColor;
    }
    &__stages {
     color: #fff;
-    
+
     font-size: 18px;
    span {
     color: #fff;
@@ -5071,7 +5167,7 @@
       box-shadow: $blockBoxShadowGray;
       width: 360px;
       background-color: #fff;
-    
+
       &-info {
         padding-left: 20px;
         li {
@@ -5099,7 +5195,7 @@
       .js-select2 {
         width: 100%;
       }
-     
+
       .select2-container--default .select2-search--dropdown .select2-search__field {
         border: 1px solid red;
       }
@@ -5127,7 +5223,7 @@
             border-radius: 5px;
           }
         }
-       
+
       }
     }
     &__days {
@@ -5223,7 +5319,7 @@
       .ui-state-active {
         background: $blueColor;
         color: #fff;
-        
+
       }
       }
     }
@@ -5263,7 +5359,7 @@
         }
       }
     }
-    &__form { 
+    &__form {
       position: relative;
       z-index: 5;
       margin: 8px 8px 15px 8px;
@@ -5311,7 +5407,7 @@
       border-radius: 15px;
       display: flex;
       justify-content: center;
-     
+
       font-size: 20px;
       height: 50px;
       font-weight: 700;
@@ -5343,11 +5439,30 @@
         .services__list-name {
           color: $blueColor;
         }
-        .services__list-btn {
-          color: #fff;
-          background-color: $blueColor;
-          border: 1px solid #fff;
+      }
+    }
+    //
+    &-item:last-child{
+      display: flex;
+      width: 23%;
+      margin: 7px;
+      padding: 0px;
+      border-radius: 15px;
+      border: none;
+      cursor: default;
+      transition: none;
+      align-items: center;
+      &:hover {
+        box-shadow: none;
+        .services__list-btn{
+          cursor: pointer;
         }
+      }
+      .services__list-btn:hover{
+        cursor: pointer;
+        color: #fff;
+        background-color: $blueColor;
+        border: 1px solid #fff;
       }
     }
     &-wrapper {
@@ -5720,7 +5835,7 @@
         margin-right: 0;
       }
     }
- 
+
   }
 
   .specialist {
@@ -5794,8 +5909,8 @@
         height: 350px;
         border-radius: 0;
         padding: 0 10px;
-       
-       
+
+
       }
       &-tab {
         &__wrapper {
@@ -6336,7 +6451,7 @@
       &-item {
         width: 100%;
       }
-    
+
     }
     &__achievements {
       flex-direction: column;
@@ -6354,7 +6469,7 @@
     }
   }
   .info {
-   
+
     &__accordion {
       &-content {
         &__list {
@@ -6841,7 +6956,7 @@
         &__item {
           font-size: 18px;
           padding: 12px 16px;
-        
+
         }
       }
       &-tab {
@@ -6923,4 +7038,68 @@
     }
   }
  }
+}
+.wthsbutton:hover{
+	cursor:pointer;
+}
+
+.whatsapp-button {
+    position: fixed;
+    right: 13px;
+    bottom: 5px;
+    transform: translate(-50%, -50%);
+    background: #25D366;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    color: #fff;
+    text-align: center;
+    line-height: 53px;
+    font-size: 35px;
+    z-index: 9999999999;
+    user-select: none;
+    & a {
+      color: #fff;
+    }
+    & img{
+      width: 39px;
+      margin-top: 13px;
+    }
+    &::before,
+    &::after{
+      content: " ";
+      display: block;
+      position: absolute;
+      border: 50%;
+      border: 1px solid #25D366; /*Ñ†Ð²ÐµÑ‚ Ð°Ð½Ð¸Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð²Ð¾Ð»Ð½ Ð¾Ñ‚ ÐºÐ½Ð¾Ð¿ÐºÐ¸*/
+      left: -20px;
+      right: -20px;
+      top: -20px;
+      bottom: -20px;
+      border-radius: 50%;
+      animation: animate 1.5s linear infinite;
+      opacity: 0;
+      backface-visibility: hidden;
+    }
+    &::after{
+      animation-delay: .5s;
+    }
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
