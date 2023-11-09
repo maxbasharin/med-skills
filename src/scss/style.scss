@@ -16,7 +16,7 @@
 
 /* =======================================================================================================================
 * Библиотеки
-* раскомментировать для использования 
+* раскомментировать для использования
 */
 // @import 'libs/aos';
 // @import 'libs/swiper';
@@ -62,7 +62,7 @@
         &.active {
           border-radius: $mainRadius;
           border: 1px solid $blackColor;
-         
+
           .nav__link {
             .icon-triangle {
              transform: rotate(30deg);
@@ -92,7 +92,7 @@
         .has-sub {
           display: none;
           margin-left: 30px;
-         
+
           &.open {
             display: block;
           }
@@ -104,7 +104,7 @@
             text-align: left;
             font-size: 16px;
             display: block;
-           
+
             border-radius: 15px 15px 0 0;
             border-bottom: $borderLneGray;
             transition: all 0.1s linear;
@@ -2328,7 +2328,7 @@ p {
 .modal {
   border-radius: 15px;
   box-shadow: $blockBoxShadow;
-
+  max-width: 600px;
   &__requirements {
     max-width: 500px;
   }
@@ -4459,7 +4459,7 @@ p {
   font-weight: 700;
 }
 
-////// clinica 
+////// clinica
 .advantages-clinic {
   padding: 120px 0 60px 0;
 
@@ -4923,7 +4923,7 @@ p {
 
       }
 
-     
+
 
       &__img {
         margin-top: 10px;
@@ -5015,9 +5015,9 @@ p {
     height: 0;
     padding: 0;
     padding: 0 20px;
-   
+
     &.active {
-    
+
       height: max-content;
       padding: 15px 20px 0 20px;
     }
@@ -5046,9 +5046,9 @@ p {
       position: absolute;
       left: 50%;
       bottom: 10px;
-    
+
       z-index: 1;
-      
+
     }
     &--two {
       position: absolute;
@@ -5073,7 +5073,7 @@ p {
       padding-left: 40px;
       padding-bottom: 40px;
       margin: 20px 0;
-     
+
       &__wrapper {
         border-radius: 15px;
         padding: 20px;
@@ -5147,14 +5147,14 @@ p {
     }
    &__wrapper {
     position: relative;
-  
+
     padding: 30px 20px;
     border-radius: 15px;
     background-color: $blueColor;
    }
    &__stages {
     color: #fff;
-    
+
     font-size: 18px;
    span {
     color: #fff;
@@ -5167,7 +5167,7 @@ p {
       box-shadow: $blockBoxShadowGray;
       width: 360px;
       background-color: #fff;
-    
+
       &-info {
         padding-left: 20px;
         li {
@@ -5195,7 +5195,7 @@ p {
       .js-select2 {
         width: 100%;
       }
-     
+
       .select2-container--default .select2-search--dropdown .select2-search__field {
         border: 1px solid red;
       }
@@ -5223,7 +5223,7 @@ p {
             border-radius: 5px;
           }
         }
-       
+
       }
     }
     &__days {
@@ -5319,7 +5319,7 @@ p {
       .ui-state-active {
         background: $blueColor;
         color: #fff;
-        
+
       }
       }
     }
@@ -5359,7 +5359,7 @@ p {
         }
       }
     }
-    &__form { 
+    &__form {
       position: relative;
       z-index: 5;
       margin: 8px 8px 15px 8px;
@@ -5407,7 +5407,7 @@ p {
       border-radius: 15px;
       display: flex;
       justify-content: center;
-     
+
       font-size: 20px;
       height: 50px;
       font-weight: 700;
@@ -5439,11 +5439,29 @@ p {
         .services__list-name {
           color: $blueColor;
         }
-        .services__list-btn {
-          color: #fff;
-          background-color: $blueColor;
-          border: 1px solid #fff;
+      }
+    }
+    &-item:last-child{
+      display: flex;
+      width: 23%;
+      margin: 7px;
+      padding: 0px;
+      border-radius: 15px;
+      border: none;
+      cursor: default;
+      transition: none;
+      align-items: center;
+      &:hover {
+        box-shadow: none;
+        .services__list-btn{
+          cursor: pointer;
         }
+      }
+      .services__list-btn:hover{
+        cursor: pointer;
+        color: #fff;
+        background-color: $blueColor;
+        border: 1px solid #fff;
       }
     }
     &-wrapper {
@@ -5816,7 +5834,7 @@ p {
         margin-right: 0;
       }
     }
- 
+
   }
 
   .specialist {
@@ -5890,8 +5908,8 @@ p {
         height: 350px;
         border-radius: 0;
         padding: 0 10px;
-       
-       
+
+
       }
       &-tab {
         &__wrapper {
@@ -6432,7 +6450,7 @@ p {
       &-item {
         width: 100%;
       }
-    
+
     }
     &__achievements {
       flex-direction: column;
@@ -6450,7 +6468,7 @@ p {
     }
   }
   .info {
-   
+
     &__accordion {
       &-content {
         &__list {
@@ -6937,7 +6955,7 @@ p {
         &__item {
           font-size: 18px;
           padding: 12px 16px;
-        
+
         }
       }
       &-tab {
