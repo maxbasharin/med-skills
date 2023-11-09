@@ -378,8 +378,6 @@ $('.marquee__two').marquee({
 
 // Запись на исследование
 if ($('.slots') != undefined || $('.slots') != null){
-
-
   $('.js-select2')
   $('.js-select2').select2({
     placeholder: "Список врачей",
@@ -401,10 +399,6 @@ if ($('.slots') != undefined || $('.slots') != null){
       console.log($('.js-select2').val())
     }
   }
-
-
-
-
   $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',
     prevText: 'Предыдущий',
@@ -441,10 +435,6 @@ if ($('.slots') != undefined || $('.slots') != null){
   })
 
 }
-
-
-
-
 $('.marquee__three').marquee({
   duration: 10000,
   gap: 50,
@@ -494,6 +484,11 @@ $('.sveden--clinica').click(function () {
 });
 $('.has-sub-btn').click(function () {
   $(this).siblings('.has-sub').toggleClass("open");
+});
+
+$('body').on('click', '.wthsbutton', function(e){
+  ym(49709299,'reachGoal','whtsapp');
+  window.open('https://api.whatsapp.com/send?phone=79514991999', '_blank');
 });
 
 $('.getLink').click(function () {
