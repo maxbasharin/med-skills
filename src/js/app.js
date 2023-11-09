@@ -312,17 +312,15 @@ $('.btn--programm').click(function () {
     type: 'inline'
   });
   let programm_item = $(this).children("div");
-  console.log($(this))
   if (programm_item.length == 0){
     programm_item = $(this).children("span");
     var prog_name = programm_item[0].innerText;
     var prog_price = programm_item[1].innerText.replace(" руб.","");
-    console.log(prog_price)
   }else{
     var prog_name = programm_item.children("div")[0].innerText;
     var prog_price = programm_item.children("div")[1].innerText.replace(" ₽","");
   }
-  $(".specialist__services-tab__item")
+  $(".specialist_services-tab_item")
   $("#form--programm").find("#inpt_programm_name").val(prog_name);
   $("#form--programm").find("#inpt_programm_price").val(prog_price);
   $("#form--programm").find(".title").text("Вы выбрали:");
@@ -380,8 +378,6 @@ $('.marquee__two').marquee({
 
 // Запись на исследование
 if ($('.slots') != undefined || $('.slots') != null){
-
-
   $('.js-select2')
   $('.js-select2').select2({
     placeholder: "Список врачей",
@@ -403,10 +399,6 @@ if ($('.slots') != undefined || $('.slots') != null){
       console.log($('.js-select2').val())
     }
   }
-
-
-
-
   $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',
     prevText: 'Предыдущий',
@@ -443,10 +435,6 @@ if ($('.slots') != undefined || $('.slots') != null){
   })
 
 }
-
-
-
-
 $('.marquee__three').marquee({
   duration: 10000,
   gap: 50,
@@ -496,6 +484,11 @@ $('.sveden--clinica').click(function () {
 });
 $('.has-sub-btn').click(function () {
   $(this).siblings('.has-sub').toggleClass("open");
+});
+
+$('body').on('click', '.wthsbutton', function(e){
+  ym(49709299,'reachGoal','whtsapp');
+  window.open('https://api.whatsapp.com/send?phone=79514991999', '_blank');
 });
 
 $('.getLink').click(function () {
@@ -608,8 +601,6 @@ wrapMap.onmouseleave = function () {
   mapTitle.style.display = 'none';
 }
 
-// клик по иконке вотсапа
-$('body').on('click', '.wthsbutton', function(e){
-  ym(49709299,'reachGoal','whtsapp');
-  window.open('https://api.whatsapp.com/send?phone=79514991999', '_blank');
-});
+
+
+
