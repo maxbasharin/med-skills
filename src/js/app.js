@@ -126,6 +126,7 @@ $('.specialist__achievements-slider--documents').on(
     $('#pagination--documents').text(currentSlide + 1);
   }
 );
+
 $('.specialist__achievements-slider--certificate').slick({
   infinite: true,
   slidesToShow: 1,
@@ -142,6 +143,7 @@ $('.specialist__achievements-slider--certificate').on(
     $('#pagination--certificate').text(currentSlide + 1);
   }
 );
+
 $('.specialist__achievements-slider--certificates').slick({
   infinite: true,
   slidesToShow: 1,
