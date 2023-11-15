@@ -110,6 +110,7 @@ $('.metodist-slider').slick({
   arrows: false
 });
 
+// documents
 $('.specialist__achievements-slider--documents').slick({
   infinite: true,
   slidesToShow: 1,
@@ -123,11 +124,12 @@ $('.specialist__achievements-slider--documents').slick({
 $('.specialist__achievements-slider--documents').on(
   'afterChange',
   function (event, slick, currentSlide) {
-    $('#pagination--documents').text(currentSlide + 1);
+    $(this).parent().children(".pagination").children("#pagination--documents").text(currentSlide + 1);
   }
 );
 
-$('.specialist__achievements-slider--certificate').slick({
+// patent
+$('.specialist__achievements-slider--patent_gramot').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -137,29 +139,14 @@ $('.specialist__achievements-slider--certificate').slick({
     '<img class="specialist__achievements-slider__right" src="images/arrow-right-black.svg" alt="">',
 });
 
-$('.specialist__achievements-slider--certificate').on(
+$('.specialist__achievements-slider--patent_gramot').on(
   'afterChange',
   function (event, slick, currentSlide) {
-    $('#pagination--certificate').text(currentSlide + 1);
+    $(this).parent().children(".pagination").children("#pagination--patent_gramot").text(currentSlide + 1);
   }
 );
 
-$('.specialist__achievements-slider--certificates').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow:
-    '<img class="specialist__achievements-slider__left" src="images/arrow-left-black.svg" alt="">',
-  nextArrow:
-    '<img class="specialist__achievements-slider__right" src="images/arrow-right-black.svg" alt="">',
-});
-
-$('.specialist__achievements-slider--certificates').on(
-  'afterChange',
-  function (event, slick, currentSlide) {
-    $('#pagination--certificates').text(currentSlide + 1);
-  }
-);
+// diplom
 $('.specialist__achievements-slider--diplom').slick({
   infinite: true,
   slidesToShow: 1,
@@ -173,7 +160,7 @@ $('.specialist__achievements-slider--diplom').slick({
 $('.specialist__achievements-slider--diplom').on(
   'afterChange',
   function (event, slick, currentSlide) {
-    $('#pagination--diplom').text(currentSlide + 1);
+    $(this).parent().children(".pagination").children("#pagination--diplom").text(currentSlide + 1);
   }
 );
 
