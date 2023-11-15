@@ -518,6 +518,15 @@
 
     &-content {
       max-width: 500px;
+      .btn:nth-last-child(2){
+        display: none;
+        color: #000 !important;
+        background-color: #fff !important;
+        &:hover{
+          color: #fff !important;
+          background-color: #252525 !important;
+        }
+      }
     }
 
     img {
@@ -5538,6 +5547,16 @@ p {
   }
 
   .intro {
+    .btn:nth-last-child(2){
+      display: inline-block;
+      margin-bottom: 5px;
+      color: #000 !important;
+      background-color: #fff !important;
+      &:hover{
+        color: #fff !important;
+        background-color: #252525 !important;
+      }
+    }
     &__container {
       padding: 20px;
     }
@@ -5549,6 +5568,7 @@ p {
 
     &__wrapper-content {
       max-width: 400px;
+
     }
 
     &__include {
@@ -6027,6 +6047,16 @@ p {
       &-content {
         margin-bottom: 35px;
         max-width: 100%;
+        .btn:nth-last-child(2){
+          display: inline-block !important;
+          margin-bottom: 5px;
+          color: #000 !important;
+          background-color: #fff !important;
+          &:hover{
+            color: #fff !important;
+            background-color: #252525 !important;
+          }
+        }
       }
 
       &-video {
