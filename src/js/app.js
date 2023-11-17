@@ -66,6 +66,8 @@ isWebp();
 // togglePopupWindows()
 // =======================================================================================================
 
+let form_data = {};
+
 $('.nav-catalog-specialties').click(function () {
   $(this).toggleClass('open');
   $('.nav-icon-specialties').toggleClass('open');
@@ -330,7 +332,6 @@ $('.btn--education').click(function () {
     type: 'inline'
   });
   var item = $(this).children("div");
-  console.log(item)
 });
 
 $('.btn--zapis_kategory').click(function () {
@@ -339,7 +340,7 @@ $('.btn--zapis_kategory').click(function () {
     type: 'inline'
   });
   var kategory_item = $(this).parent("div").parent("div").parent("div").find(".title.title-small").text();
-  console.log(kategory_item);
+
   // категория в заголовке:
   // $("#form--zapis_kategory").find(".title").text("Запись на прием: "+kategory_item);
   $("#id_programs_kategory").val(kategory_item);
@@ -372,66 +373,122 @@ $('.marquee__two').marquee({
   duplicated: true,
   pauseOnHover: true
 });
-
 // Запись на исследование
+$( document ).ready(function() {
 if ($('.slots') != undefined || $('.slots') != null){
-  $('.js-select2')
-  $('.js-select2').select2({
-    placeholder: "Список врачей",
-    maximumSelectionLength: 2,
-    language: "ru",
-    width: 'resolve'
-  });
-  // $('.slots__doctor-item').hide()
-  $(".select2").on("click", function() {
-    console.log("err")
-    hideShow()
-  });
-  $('.slots__doctor-item').hide()
-  function hideShow(){
-    if ($('.js-select2').val() == 0){
-
-    }else{
-      $('.slots__doctor-item').toggle()
-      console.log($('.js-select2').val())
-    }
-  }
-  $.datepicker.regional['ru'] = {
-    closeText: 'Закрыть',
-    prevText: 'Предыдущий',
-    nextText: 'Следующий',
-    currentText: 'Сегодня',
-    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-    weekHeader: 'Не',
-    dateFormat: 'dd.mm.yy',
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: ''
-  };
-  $.datepicker.setDefaults($.datepicker.regional['ru']);
-  $(function(){
-    $("#datepicker").datepicker({
-      beforeShowDay: function(date){
-        var dayOfWeek = date.getDay();
-        if (dayOfWeek == 0 || dayOfWeek == 6){
-          return [false];
-        } else {
-          return [true];
-        }
-      }
+    form_data["doctor_appointment"] = []
+    $('.js-select2').select2({
+      placeholder: "Список врачей",
+      maximumSelectionLength: 2,
+      language: "ru",
+      width: 'resolve'
     });
-  });
+    $(".slots__doctor-item").each(function() {
+      $(this).hide()
+    });
+    $.datepicker.regional['ru'] = {
+      closeText: 'Закрыть',
+      prevText: 'Предыдущий',
+      nextText: 'Следующий',
+      currentText: 'Сегодня',
+      monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+      dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+      dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+      dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+      weekHeader: 'Не',
+      dateFormat: 'dd.mm.yy',
+      firstDay: 1,
+      isRTL: false,
+      showMonthAfterYear: false,
+      yearSuffix: ''
+    };
 
-  $('.slots__time-value').click(function () {
-    $(this).toggleClass('slots__time-value__selected')
-  })
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
 
+    let doctor_selected = false;
+    let date_selected = false;
+    let time_selected = false;
+    $('.js-select2').on('select2:select', function (e) {
+      var data = e.params.data;
+      $(".slots__doctor-item").each(function() {
+        if (data.id == $(this).attr("data-doctor-id")){
+          $(this).show()
+          doctor_selected = true;
+          if (doctor_selected == true){
+            $(".ui-datepicker").removeClass("hidden-date");
+
+
+            form_data["doctor_appointment"]["doctor_data"] = {
+              id: data.id,
+              name: data.text,
+              dates_work: [1,3,4]
+            };
+          }
+        }else{
+          $(this).hide()
+        }
+      });
+    });
+
+
+
+    $("#datepicker").datepicker('setDate', null);
+    $(function(){
+      $("#datepicker").datepicker({
+        beforeShowDay: function(date){
+          var dayOfWeek = date.getDay();
+          if (doctor_selected != true){
+            $(".ui-datepicker").addClass("hidden-date");
+            if(date_selected != true){
+              $(".slots__time").addClass("hidden-time")
+            }
+          }
+
+          $("#datepicker_value").val($("#datepicker").datepicker().val());
+          if (dayOfWeek == 0 || dayOfWeek == 6){
+            return [false];
+          } else {
+            return [true];
+          }
+        },
+        onSelect: function(date, inst) {
+          date_selected = true;
+          $("#datepicker_value").val(date);
+          form_data["doctor_appointment"]["date"] = $("#datepicker_value").val()
+
+          if(date_selected == true){
+            $(".slots__time").removeClass("hidden-time")
+          }
+        },
+      });
+    });
+
+    $(".slots__time-value").on("click", (e) => {
+      let list_time = $(".slots__time").find(".slots__time-value");
+      list_time.each((e_, i) => {
+          let item = $(i);
+          item.removeClass("slots__time-value__selected");
+        });
+      $(e.currentTarget).addClass("slots__time-value__selected");
+      time_selected = true;
+      $("#time_value").val($(e.currentTarget).text().trim());
+      form_data["doctor_appointment"]["time"] = $("#time_value").val()
+      $(".slots__form").removeClass("hidden-form");
+
+    });
+
+    $(".slots__form").addClass("hidden-form");
+    $(".slots__form").find(".btn").on("click",(e) =>{
+      form_data["doctor_appointment"]["contact"] = {
+        name: $(".slots__form").find(".input-name").val(),
+        telephone: $(".slots__form").find(".input-tel").val()
+      }
+      console.log(form_data);
+    });
 }
+});
+
 $('.marquee__three').marquee({
   duration: 10000,
   gap: 50,
