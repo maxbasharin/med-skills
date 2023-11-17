@@ -2959,9 +2959,8 @@
                                                         <option selected="selected" value=""></option>
                                                         <option value="1">Дадаян Арсен Рудольфович</option>
                                                         <option value="2">Болоцков Александр Сергеевич</option>
-
                                                     </select>
-                                                    <div class="slots__doctor-item">
+                                                    <div class="slots__doctor-item" data-doctor-id="1">
                                                         <div class="slots__doctor-img">
                                                             <img src="images/dadayan.png">
                                                         </div>
@@ -2972,14 +2971,24 @@
                                                                     class="pinkColor">*</span></li>
                                                         </ul>
                                                     </div>
+                                                    <div class="slots__doctor-item" data-doctor-id="2">
+                                                        <div class="slots__doctor-img">
+                                                            <img src="images/bolotskov.jpg">
+                                                        </div>
 
+                                                        <ul class="slots__doctor-info">
+                                                            <li>Главврач, врач-УЗИ</li>
+                                                            <li>Принимает только взрослых<span
+                                                                    class="pinkColor">*</span></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="slots__item-wrapper">
                                                 <div class="slots__stages"><span>2.</span> Выберите дату посещения</div>
                                                 <div class="slots__days">
                                                     <div id="datepicker"></div>
-                                                    <input type="hidden" id="datepicker_value" value="01.08.2019">
+                                                    <input type="hidden" name="date" id="datepicker_value" value="">
                                                 </div>
                                             </div>
                                             <div class="slots__item-wrapper">
@@ -3021,6 +3030,7 @@
                                                     <div class="slots__time-value" data-timestamp="1699196400">18:00
                                                     </div>
                                                 </div>
+                                                <input type="hidden" name="time" id="time_value" value="">
                                             </div>
                                         </div>
                                         <div>
