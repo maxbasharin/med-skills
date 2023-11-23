@@ -1093,6 +1093,9 @@
             color: #005DFF;
           }
         }
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -1721,8 +1724,9 @@
 
   &__btns {
     margin-top: 20px;
-
+    text-align: center;
     .politican {
+      text-align: left;
       margin-top: 20px;
       width: 100%;
       font-size: 12px;
@@ -3960,10 +3964,12 @@ p {
         }
 
         .btn {
-          background-color: #fff;
+          color: #fff;
+          background-color: $pinkColor;
           border: 0;
 
           &:hover {
+            color: #fff;
             background-color: $blackColor;
           }
         }
