@@ -33,7 +33,86 @@
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 // @import 'layout/header';
 // @import 'layout/footer';
+.hidden-date::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .95;
+  content: "Сначала выберите врача";
+  font-size: 18px;
+  font-weight: 700;
+  color: #005DFF;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 15px;
+}
+.hidden-time::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .95;
+  content: "Сначала выберите дату посещения";
+  font-size: 18px;
+  font-weight: 700;
+  color: #005DFF;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 15px;
+}
+.hidden-form::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .95;
+  content: "Выберите дату и время посещения";
+  font-size: 18px;
+  font-weight: 700;
+  color: #005DFF;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 15px;
+}
 
+.select2-dropdown{
+  border: 0px;
+  margin-top: 5px;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 18px;
+  padding: 7px;
+  -webkit-box-shadow: 0px 6px 8px 0px rgba(32, 32, 32, 0.2);
+  -moz-box-shadow: 0px 6px 8px 0px rgba(32, 32, 32, 0.2);
+  box-shadow: 0px 6px 8px 0px rgba(32, 32, 32, 0.2);
+  .select2-search--dropdown .select2-search__field{
+    border-radius: 5px;
+    font-size: 16px !important;
+    margin-bottom: 10px;
+  }
+  .select2-results__option--highlighted{
+    background-color: #005DFF !important;
+    border-radius: 2px;
+  }
+}
 .icon-logo {
   height: 51px;
 }
@@ -518,6 +597,15 @@
 
     &-content {
       max-width: 500px;
+      .btn:nth-last-child(2){
+        display: none;
+        color: #000 !important;
+        background-color: #fff !important;
+        &:hover{
+          color: #fff !important;
+          background-color: #252525 !important;
+        }
+      }
     }
 
     img {
@@ -5275,6 +5363,7 @@ p {
       }
 
       .ui-datepicker {
+        position: relative;
         width: 360px;
         .ui-widget-header {
           border: 1px solid #fff;
@@ -5362,6 +5451,7 @@ p {
       }
     }
     &__time {
+      position: relative;
       background-color: #fff;
       height: max-content;
       margin: 15px 8px;
@@ -5370,7 +5460,7 @@ p {
       box-shadow: $blockBoxShadowGray;
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: center;
       align-content: flex-start;
       &-value {
         transition: all 0.1s linear;
@@ -5385,7 +5475,6 @@ p {
         text-align: center;
         border-radius: 8px;
         color: #000;
-        min-width: 75px;
         height: fit-content;
         &__selected {
           color: #fff;
@@ -5538,6 +5627,16 @@ p {
   }
 
   .intro {
+    .btn:nth-last-child(2){
+      display: inline-block;
+      margin-bottom: 5px;
+      color: #000 !important;
+      background-color: #fff !important;
+      &:hover{
+        color: #fff !important;
+        background-color: #252525 !important;
+      }
+    }
     &__container {
       padding: 20px;
     }
@@ -5549,6 +5648,7 @@ p {
 
     &__wrapper-content {
       max-width: 400px;
+
     }
 
     &__include {
@@ -6027,6 +6127,16 @@ p {
       &-content {
         margin-bottom: 35px;
         max-width: 100%;
+        .btn:nth-last-child(2){
+          display: inline-block !important;
+          margin-bottom: 5px;
+          color: #000 !important;
+          background-color: #fff !important;
+          &:hover{
+            color: #fff !important;
+            background-color: #252525 !important;
+          }
+        }
       }
 
       &-video {
@@ -7053,6 +7163,7 @@ p {
         width: 100%;
         margin: 15px 0;
         padding: 15px 0;
+        justify-content: center;
       }
       &__form {
         margin: 15px 0;
